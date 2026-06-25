@@ -7,5 +7,5 @@ public record Class(
     byte ManaPerLevel,
     Dictionary<byte, List<Skill>> AutomaticProgressionTable,
     List<Power> AvailablePowers,
-    SpellCircle? SpellCircleProgression
+    Dictionary<byte, SpellCircle>? SpellCircleProgression
 );

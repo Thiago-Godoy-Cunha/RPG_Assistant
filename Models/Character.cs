@@ -13,10 +13,12 @@ public class Character {
     private byte _desloc;
     private Dictionary<AttributeType, byte> _attributes;
     private List<ExpertiseType> _trainedExpertises;
-    public Dictionary<Class, byte> _classLevels;
-    public Class _initialClass;
-    public List<Power> _chosenPowers;
-    public List<Spell> _learnedSpells;
+    private readonly Dictionary<Class, byte> _classLevels = new();
+    private readonly Class _initialClass;
+    private readonly List<Power> _chosenPowers = new();
+    private readonly List<Spell> _learnedSpells = new(); 
+    public string Name => _name;
+    public byte TotalLevel => (byte)_classLevels.Values.Sum(lvl => (int)lvl);
     public Character(string name, Dictionary<AttributeType, byte> attributes, Class firstClass) {
         foreach (AttributeType type in Enum.GetValues<AttributeType>()) {
             if (!attributes.ContainsKey(type)) {
@@ -26,10 +28,10 @@ public class Character {
         _name = name;
         _classLevels.Add(firstClass, 1);
         _attributes = attributes;
-        _initialClass = firstClass; _currentHealth = MaxHealth;
+        _initialClass = firstClass;
+        _currentHealth = MaxHealth;
         _currentMana = MaxMana;
     }
-    public byte TotalLevel => (byte)_classLevels.Values.Sum(lvl => lvl);
     public short MaxHealth {
         get {
             int constitutionMod = _attributes[AttributeType.Constitution];
@@ -58,11 +60,18 @@ public class Character {
             return (short)totalMana;
         }
     }
-    public string Name { get => _name; set => _name = value; }
     public byte Def { get => _def; set => _def = value; }
     public byte Desloc { get => _desloc; set => _desloc = value; }
     public short CurrentHealth { get => _currentHealth; set => _currentHealth = value; }
     public short CurrentMana { get => _currentMana; set => _currentMana = value; }
+
+    public Dictionary<Class, byte> ClassLevels => _classLevels;
+
+    public Class InitialClass => _initialClass;
+
+    public List<Power> ChosenPowers => _chosenPowers;
+
+    public List<Spell> LearnedSpells => _learnedSpells;
 
     public void TrainExpertise(ExpertiseType type) => _trainedExpertises.Add(type); 
     public void UntrainExpertise(ExpertiseType type) => _trainedExpertises.Remove(type);
@@ -83,9 +92,13 @@ public class Character {
     }
     public bool CanLearnPower(Power power) {
         if (TotalLevel < power.RequiredCharLevel) return false;
-        foreach(var (requiredClass, requiredLevel) in power.RequiredClassLevel) {
+
+        foreach (var (requiredClass, requiredLevel) in power.RequiredClassLevel) {
             if (_classLevels.TryGetValue(requiredClass, out byte currentClassLevel)) {
-                return (currentClassLevel >= requiredLevel);
+                if (currentClassLevel < requiredLevel) return false;
+            }
+            else {
+                if (requiredLevel > 0) return false;
             }
         }
         return true;
@@ -93,11 +106,14 @@ public class Character {
     public bool CanLearnSpell(Class casterClass, Spell spell) {
         if (casterClass.SpellCircleProgression == null) return false;
         if (!_classLevels.TryGetValue(casterClass, out byte classLevel)) return false;
-        foreach (var (classes, levels) in _classLevels) {
-            if (classes.SpellCircleProgression == null) return false;
-            return spell.Circle <= classes.SpellCircleProgression;
+        if (!casterClass.SpellCircleProgression.TryGetValue(classLevel, out SpellCircle maxCircle)) {
+            return false;
         }
-        return false;
+        return spell.Circle <= maxCircle;
+        foreach (Spell learned in _learnedSpells) {
+            if (learned.Name == spell.Name) return false;
+        }
+        return true;
     }
     public void LearnPower(Power power) {
         if (!CanLearnPower(power))
