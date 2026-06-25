@@ -1,0 +1,33 @@
+﻿namespace RPG_Assistant.Enums;
+
+public enum ExpertiseType {
+    Acrobatics,      
+    AnimalHandling,  
+    Athletics,       
+    Performance,     
+    Riding,          
+    Knowledge,       
+    Medicine,        
+    Diplomacy,       
+    Deception,       
+    Fortitude,       
+    Stealth,         
+    War,             
+    Initiative,      
+    Intimidation,    
+    Insight,         
+    Investigation,   
+    Gambling,        
+    Thievery,        
+    Fighting,        
+    Mysticism,       
+    Nobility,        
+    Craft,           
+    Perception,      
+    Piloting,        
+    Aim,             
+    Reflexes,        
+    Religion,        
+    Survival,       
+    Will             
+}
