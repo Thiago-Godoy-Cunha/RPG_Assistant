@@ -1,11 +1,10 @@
 ﻿using RPG_Assistant.Enums;
 namespace RPG_Assistant.Models;
 public record Class(
-    string Name,
+    ClassType Name,
     byte InitialHp,
     byte HpPerLevel,
     byte ManaPerLevel,
-    Dictionary<byte, List<Skill>> AutomaticProgressionTable,
-    List<Power> AvailablePowers,
+    List<ClassPower> AvailablePowers,
     Dictionary<byte, SpellCircle>? SpellCircleProgression
 );
