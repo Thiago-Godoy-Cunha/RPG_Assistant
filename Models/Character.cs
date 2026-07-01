@@ -29,6 +29,9 @@ public class Character {
         _currentMana = classe.ManaPerLevel;
     }
 
+    public string toString() {
+        return 
+    }
     //public short MaxHealth {
     //    get {
     //        int constitutionMod = _attributes[AttributeType.Constitution];
