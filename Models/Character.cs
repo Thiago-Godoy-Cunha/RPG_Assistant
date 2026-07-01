@@ -19,47 +19,44 @@ public class Character {
     private readonly List<Spell> _learnedSpells = new(); 
     public string Name => _name;
     public byte TotalLevel => (byte)_classLevels.Values.Sum(lvl => (int)lvl);
-    public Character(string name, Dictionary<AttributeType, byte> attributes, Class firstClass) {
-        foreach (AttributeType type in Enum.GetValues<AttributeType>()) {
-            if (!attributes.ContainsKey(type)) {
-                throw new ArgumentException($"Falta o atributo {type} na inicialização do personagem.");
-            }
-        }
+
+    public Character(string name, string firstClass) {
+        Class classe = new Class(firstClass);
         _name = name;
-        _classLevels.Add(firstClass, 1);
-        _attributes = attributes;
-        _initialClass = firstClass;
-        _currentHealth = MaxHealth;
-        _currentMana = MaxMana;
+        _classLevels.Add(classe, 1);
+        _initialClass = classe;
+        _currentHealth = classe.InitialHp;
+        _currentMana = classe.ManaPerLevel;
     }
-    public short MaxHealth {
-        get {
-            int constitutionMod = _attributes[AttributeType.Constitution];
-            int totalLevel = TotalLevel;
-            int baseHp = _initialClass.InitialHp;
 
-            foreach (var (classes, level) in _classLevels) {
-                if (classes == _initialClass) {
-                    baseHp += classes.HpPerLevel * (level - 1);
-                }
-                else {
-                    baseHp += classes.HpPerLevel * level;
-                }
-            }
+    //public short MaxHealth {
+    //    get {
+    //        int constitutionMod = _attributes[AttributeType.Constitution];
+    //        int totalLevel = TotalLevel;
+    //        int baseHp = _initialClass.InitialHp;
 
-            int constitutionBonus = constitutionMod * totalLevel;
-            return (short)(baseHp + constitutionBonus);
-        }
-    }
-    public short MaxMana {
-        get {
-            int totalMana = 0;
-            foreach (var (classes, level) in _classLevels) {
-                totalMana += classes.ManaPerLevel * level;
-            }
-            return (short)totalMana;
-        }
-    }
+    //        foreach (var (classes, level) in _classLevels) {
+    //            if (classes == _initialClass) {
+    //                baseHp += classes.HpPerLevel * (level - 1);
+    //            }
+    //            else {
+    //                baseHp += classes.HpPerLevel * level;
+    //            }
+    //        }
+
+    //        int constitutionBonus = constitutionMod * totalLevel;
+    //        return (short)(baseHp + constitutionBonus);
+    //    }
+    //}
+    //public short MaxMana {
+    //    get {
+    //        int totalMana = 0;
+    //        foreach (var (classes, level) in _classLevels) {
+    //            totalMana += classes.ManaPerLevel * level;
+    //        }
+    //        return (short)totalMana;
+    //    }
+    //}
     public byte Def { get => _def; set => _def = value; }
     public byte Desloc { get => _desloc; set => _desloc = value; }
     public short CurrentHealth { get => _currentHealth; set => _currentHealth = value; }
@@ -103,38 +100,38 @@ public class Character {
         }
         return true;
     }
-    public bool CanLearnSpell(Class casterClass, Spell spell) {
-        if (casterClass.SpellCircleProgression == null) return false;
-        if (!_classLevels.TryGetValue(casterClass, out byte classLevel)) return false;
-        if (!casterClass.SpellCircleProgression.TryGetValue(classLevel, out SpellCircle maxCircle)) {
-            return false;
-        }
-        return spell.Circle <= maxCircle;
-        foreach (Spell learned in _learnedSpells) {
-            if (learned.Name == spell.Name) return false;
-        }
-        return true;
-    }
+    //public bool CanLearnSpell(Class casterClass, Spell spell) {
+    //    if (casterClass.SpellCircleProgression == null) return false;
+    //    if (!_classLevels.TryGetValue(casterClass, out byte classLevel)) return false;
+    //    if (!casterClass.SpellCircleProgression.TryGetValue(classLevel, out SpellCircle maxCircle)) {
+    //        return false;
+    //    }
+    //    return spell.Circle <= maxCircle;
+    //    foreach (Spell learned in _learnedSpells) {
+    //        if (learned.Name == spell.Name) return false;
+    //    }
+    //    return true;
+    //}
     public void LearnPower(Power power) {
         if (!CanLearnPower(power))
             throw new InvalidOperationException($"O personagem não cumpre os requisitos para aprender o poder: {power.Name}.");
         _chosenPowers.Add(power);
     }
-    public void LearnSpell(Class casterClass, Spell spell) {
-        if (!CanLearnSpell(casterClass, spell))
-            throw new InvalidOperationException($"O personagem não tem acesso ao {spell.Circle}° círculo para aprender: {spell.Name}.");
-        _learnedSpells.Add(spell);
-    }
-    public List<Skill> GetAllActiveSkills() {
-        var allSkills = new List<Skill>();
-        foreach(var (classes, level) in _classLevels) {
-            foreach (var (levelUnlocked, skills) in classes.AutomaticProgressionTable) {
-                if (TotalLevel >= levelUnlocked) {
-                    allSkills.AddRange(skills);
-                }
-            }
-        }
-        allSkills.AddRange(_chosenPowers);
-        return allSkills;
-    }
+    //public void LearnSpell(Class casterClass, Spell spell) {
+    //    if (!CanLearnSpell(casterClass, spell))
+    //        throw new InvalidOperationException($"O personagem não tem acesso ao {spell.Circle}° círculo para aprender: {spell.Name}.");
+    //    _learnedSpells.Add(spell);
+    //}
+    //public List<Skill> GetAllActiveSkills() {
+    //    var allSkills = new List<Skill>();
+    //    foreach(var (classes, level) in _classLevels) {
+    //        foreach (var (levelUnlocked, skills) in classes.AutomaticProgressionTable) {
+    //            if (TotalLevel >= levelUnlocked) {
+    //                allSkills.AddRange(skills);
+    //            }
+    //        }
+    //    }
+    //    allSkills.AddRange(_chosenPowers);
+    //    return allSkills;
+    //}
 }

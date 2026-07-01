@@ -1,19 +1,17 @@
 ﻿namespace RPG_Assistant.Enums;
 public enum ClassType {
-    Warlock,
-    Sorcerer,
-    Wizard,
-    Barbarian,
-    Bard,
-    Buccaneer,
-    Ranger,
-    Knight,
-    Cleric,
-    Druid,
-    Warrior,
-    Paladin,
+    Arcanista,
+    Barbaro,
+    Bardo,
+    Bucaneiro,
+    Caçador,
+    Cavaleiro,
+    Clerigo,
+    Druida,
+    Guerreiro,
+    Paladino,
     Inventor,
-    Rogue,
-    Brawler,
-    Noble
+    Ladino,
+    Lutador,
+    Nobre
 }

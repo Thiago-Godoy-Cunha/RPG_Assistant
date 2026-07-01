@@ -1,0 +1,82 @@
+{
+  "classes": [
+    {
+      "Nome": "Arcanista",
+      "InitialHp": 8,
+      "HpPerLevel": 2,
+      "ManaPerLevel": 6
+    },
+    {
+      "Nome": "Barbaro",
+      "InitialHp": 24,
+      "HpPerLevel": 6,
+      "ManaPerLevel": 3
+    },
+    {
+      "Nome": "Bardo",
+      "InitialHp": 12,
+      "HpPerLevel": 3,
+      "ManaPerLevel": 4
+    },
+    {
+      "Nome": "Bucaneiro",
+      "InitialHp": 16,
+      "HpPerLevel": 4,
+      "ManaPerLevel": 3
+    },
+    {
+      "Nome": "Caçador",
+      "InitialHp": 16,
+      "HpPerLevel": 4,
+      "ManaPerLevel": 4
+    },
+    {
+      "Nome": "Cavaleiro",
+      "InitialHp": 20,
+      "HpPerLevel": 5,
+      "ManaPerLevel": 3
+    },
+    {
+      "Nome": "Clerigo",
+      "InitialHp": 16,
+      "HpPerLevel": 4,
+      "ManaPerLevel": 5
+    },
+    {
+      "Nome": "Druida",
+      "InitialHp": 16,
+      "HpPerLevel": 4,
+      "ManaPerLevel": 4
+    },
+    {
+      "Nome": "Guerreiro",
+      "InitialHp": 20,
+      "HpPerLevel": 5,
+      "ManaPerLevel": 3
+    },
+    {
+      "Nome": "Inventor",
+      "InitialHp": 12,
+      "HpPerLevel": 3,
+      "ManaPerLevel": 4
+    },
+    {
+      "Nome": "Ladino",
+      "InitialHp": 12,
+      "HpPerLevel": 3,
+      "ManaPerLevel": 4
+    },
+    {
+      "Nome": "Lutador",
+      "InitialHp": 20,
+      "HpPerLevel": 5,
+      "ManaPerLevel": 3
+    },
+    {
+      "Nome": "Nobre",
+      "InitialHp": 16,
+      "HpPerLevel": 4,
+      "ManaPerLevel": 4
+    }
+  ]
+}
