@@ -11,8 +11,8 @@ public class Character {
     private short _currentMana;
     private byte _def;
     private byte _desloc;
-    private Dictionary<AttributeType, byte> _attributes;
-    private List<ExpertiseType> _trainedExpertises;
+    private Dictionary<AttributeType, sbyte> _attributes = new();
+    private List<ExpertiseType> _trainedExpertises = new();
     private readonly Dictionary<Class, byte> _classLevels = new();
     private readonly Class _initialClass;
     private readonly List<Power> _chosenPowers = new();
@@ -20,7 +20,7 @@ public class Character {
     public string Name => _name;
     public byte TotalLevel => (byte)_classLevels.Values.Sum(lvl => (int)lvl);
 
-    public Character(string name, string firstClass) {
+    public Character(string name, ClassType firstClass) {
         Class classe = new Class(firstClass);
         _name = name;
         _classLevels.Add(classe, 1);
@@ -30,7 +30,7 @@ public class Character {
     }
 
     public string toString() {
-        return $"{_name} é um {_initialClass.Name} de nível {TotalLevel}\nVida: {CurrentHealth}\nMana:{CurrentMana}";
+        return $"{_name} é um {_initialClass.Name} de nível {TotalLevel}\nVida: {CurrentHealth}\nMana: {CurrentMana}";
     }
     //public short MaxHealth {
     //    get {
@@ -78,7 +78,7 @@ public class Character {
     public bool IsTrained(ExpertiseType type) => _trainedExpertises.Contains(type);
     public int GetExpertiseModifier(ExpertiseType expertise) {
         AttributeType associatedAttr = expertise.GetAssociatedAttribute();
-        byte attributeValue = _attributes[associatedAttr];
+        sbyte attributeValue = _attributes[associatedAttr];
         byte levelBonus = (byte) (TotalLevel / 2);
         byte trainingBonus = 0;
         if (_trainedExpertises.Contains(expertise)) {
@@ -120,6 +120,8 @@ public class Character {
             throw new InvalidOperationException($"O personagem não cumpre os requisitos para aprender o poder: {power.Name}.");
         _chosenPowers.Add(power);
     }
+
+    public void SetAttributes(Dictionary<AttributeType, sbyte> attributes) => _attributes = attributes;
     //public void LearnSpell(Class casterClass, Spell spell) {
     //    if (!CanLearnSpell(casterClass, spell))
     //        throw new InvalidOperationException($"O personagem não tem acesso ao {spell.Circle}° círculo para aprender: {spell.Name}.");

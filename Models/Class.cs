@@ -9,8 +9,8 @@ public class Class {
     //private List<ClassPower> AvailablePowers;
     //private Dictionary<byte, SpellCircle>? SpellCircleProgression;
 
-    public Class(string name) {
-        _name = Enum.Parse<ClassType>(name);
+    public Class(ClassType name) {
+        _name = name;
 
         string jsonString = File.ReadAllText("C:\\Users\\thiag\\source\\repos\\Thiago-Godoy-Cunha\\RPG_Assistant\\classes.json");
         using JsonDocument doc = JsonDocument.Parse(jsonString);
