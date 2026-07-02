@@ -20,9 +20,22 @@ public class Program
             Console.WriteLine((int)(classe + 1) + " - " + classe.ToString());
         }
         string _inputClass = Console.ReadLine();
+        if (int.TryParse(_inputClass, out int parsed)) {
+            var values = Enum.GetValues(typeof(ClassType));
+            int count = values.Length;
+            if (parsed >= 1 && parsed <= count) {
+                ClassType selected = (ClassType)(parsed - 1);
+            } else {
+                foreach (ClassType classe in Enum.GetValues(typeof(ClassType))) {
+                    if (_inputClass.Equals(classe.ToString())) {
+                        
+                    }
+                }
+            }
+        }
         Console.WriteLine("Qual é o nome do seu personagem?");
         string _inputName = Console.ReadLine();
         Character character = new Character(_inputName, _inputClass);
-        Console.WriteLine(character);
+        Console.WriteLine(character.toString());
     }
 }

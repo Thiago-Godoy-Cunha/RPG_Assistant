@@ -30,7 +30,7 @@ public class Character {
     }
 
     public string toString() {
-        return 
+        return $"{_name} é um {_initialClass.Name} de nível {TotalLevel}\nVida: {CurrentHealth}\nMana:{CurrentMana}";
     }
     //public short MaxHealth {
     //    get {
