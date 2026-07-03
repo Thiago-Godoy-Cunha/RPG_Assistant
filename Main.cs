@@ -14,7 +14,7 @@ public class ClassesRoot {
 
 public class Program
 {
-    static void Main(string[] args) {
+    static async Task Main(string[] args) {
         ClassType _selectedClass = (ClassType) new Random().Next(1, 15);
         while (true) {
             Console.WriteLine("Qual é a sua classe?");
@@ -59,15 +59,16 @@ public class Program
         
         Console.WriteLine("Qual é o nome do seu personagem?");
         string _inputName = Console.ReadLine();
-        Console.WriteLine(" ------ Tabela Custos Atributos -------");
-        Console.WriteLine(" ------   Total de 10 pontos    -------");
-        PrintAttributeCostTable();
-        Console.WriteLine("Distribua:");
-        var attributes = GetAttributesFromUser();
+        Console.Clear();
 
         Character character = new Character(_inputName, _selectedClass);
+        Console.WriteLine(character.ToString() + "\n");
+
+        var attributes = GetAttributesFromUser();
+
         character.SetAttributes(attributes);
-        Console.WriteLine(character.toString());
+        Console.Clear();
+        Console.WriteLine(character.ToString());
 
         Console.WriteLine("Atributos definidos:");
         foreach (var kv in attributes)
@@ -82,6 +83,9 @@ public class Program
         byte costWidth = 15;
         string sep = "+" + new string('-', nameWidth + 2) + "+" + new string('-', costWidth + 2) + "+";
 
+        Console.WriteLine(" ------ Tabela Custos Atributos -------");
+        Console.WriteLine(" ------   Total de 10 pontos    -------");
+
         Console.WriteLine(sep);
         Console.WriteLine($"| {"Atributo",-18} | {"Custo",-15} |");
         Console.WriteLine(sep);
@@ -95,69 +99,71 @@ public class Program
         Console.WriteLine(sep);
     }
 
-    private static Dictionary<AttributeType, sbyte> GetAttributesFromUser()
-    {
-        var attributes = (AttributeType[])Enum.GetValues(typeof(AttributeType));
+    private static Dictionary<AttributeType, sbyte> GetAttributesFromUser() {
+        PrintAttributeCostTable();
 
-        while (true)
-        {
-            var results = new Dictionary<AttributeType, sbyte>();
+        int initialCursorX = Console.CursorLeft;
+        int initialCursorY = Console.CursorTop;
+        var attributes = Enum.GetValues<AttributeType>();
+        sbyte totalCost = 0;
 
-            foreach (var attr in attributes)
-            {
-                sbyte value = GetAttributeValue(attr);
-                results[attr] = value;
+        while (true) {
+            var results = attributes.ToDictionary(key => key, value => (sbyte)0);
+
+            foreach (var currentAttr in attributes) {
+                while (true) {
+                    Console.SetCursorPosition(initialCursorX, initialCursorY);
+                    int cursorX = 0;
+                    int cursorY = 0;
+                    Console.Write($"\tRestam {10-totalCost} pontos");
+
+                    foreach (var attr in attributes) {
+                        if (attr == currentAttr) {
+                            Console.Write($"\n{attr}: ");
+                            cursorX = Console.CursorLeft;
+                            cursorY = Console.CursorTop;
+                        } else {
+                            Console.Write($"\n{attr}: {results[attr]}");
+                        }
+                    }
+
+                    Console.SetCursorPosition(cursorX, cursorY);
+                    string input = Console.ReadLine();
+
+                    if (!int.TryParse(input, out int val) || val < -1 || val > 4) {
+                        Console.SetCursorPosition(cursorX+2, cursorY);
+                        Console.Write("Erro: Digite somente números entre -1 e 4.");
+
+                        Thread.Sleep(2000);
+                        continue;
+                    }
+
+                    results[currentAttr] = (sbyte)val;
+                    totalCost += AttributeCost((sbyte)val);
+                    break;
+                }
             }
 
-            int totalCost = 0;
-            foreach (var v in results.Values)
-            {
-                totalCost += AttributeCost(v);
+            if (totalCost == 10) {
+                return results; 
             }
 
-            if (totalCost == 10)
-            {
-                return results;
-            }
-
-            Console.WriteLine($"A soma dos custos deu {totalCost}. Precisa ser exatamente 10. Vamos digitar os atributos novamente.\n");
+            Console.Clear();
+            Console.WriteLine($"\nA soma dos custos deu {totalCost}. Precisa ser exatamente 10.");
+            Console.WriteLine("Vamos reiniciar o preenchimento dos atributos...\n");
+            Thread.Sleep(3500);
         }
     }
 
-    private static sbyte GetAttributeValue(AttributeType attributeName)
-    {
-        while (true)
-        {
-            Console.Write($"{attributeName}: ");
-            var input = Console.ReadLine();
-            if (!int.TryParse(input, out int val))
-            {
-                Console.WriteLine("Digite somente números entre -1 e 4.");
-                continue;
-            }
-
-            if (val < -1 || val > 4)
-            {
-                Console.WriteLine("Valor inválido. Use um número entre -1 e 4.");
-                continue;
-            }
-
-            return (sbyte)val;
-        }
-    }
-
-    private static int AttributeCost(int value)
-    {
-        // Values -1..2 cost their own value; 3 costs 4; 4 costs 7
-        return value switch
-        {
+    private static sbyte AttributeCost(int value) {
+        return value switch {
             -1 => -1,
             0 => 0,
             1 => 1,
             2 => 2,
             3 => 4,
             4 => 7,
-            _ => throw new ArgumentOutOfRangeException(nameof(value), "Valor de atributo fora do intervalo esperado")
+            _ => throw new ArgumentOutOfRangeException(nameof(value), "Valor fora do intervalo esperado")
         };
     }
 }

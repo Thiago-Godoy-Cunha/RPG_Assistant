@@ -29,9 +29,10 @@ public class Character {
         _currentMana = classe.ManaPerLevel;
     }
 
-    public string toString() {
+    public string ToString() {
         return $"{_name} é um {_initialClass.Name} de nível {TotalLevel}\nVida: {CurrentHealth}\nMana: {CurrentMana}";
     }
+
     //public short MaxHealth {
     //    get {
     //        int constitutionMod = _attributes[AttributeType.Constitution];

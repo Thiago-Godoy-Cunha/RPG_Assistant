@@ -3,7 +3,7 @@ namespace RPG_Assistant.Extensions;
 public static class ExpertiseExtensions {
     public static AttributeType GetAssociatedAttribute(this ExpertiseType type) => type switch {
         ExpertiseType.Athletics or
-        ExpertiseType.Fighting => AttributeType.Strength,
+        ExpertiseType.Fighting => AttributeType.Forca,
 
         ExpertiseType.Riding or
         ExpertiseType.Acrobatics or
@@ -11,9 +11,9 @@ public static class ExpertiseExtensions {
         ExpertiseType.Initiative or
         ExpertiseType.Thievery or
         ExpertiseType.Piloting or
-        ExpertiseType.Reflexes => AttributeType.Dexterity,
+        ExpertiseType.Reflexes => AttributeType.Destreza,
 
-        ExpertiseType.Fortitude => AttributeType.Constitution,
+        ExpertiseType.Fortitude => AttributeType.Constituicao,
 
         ExpertiseType.Knowledge or
         ExpertiseType.War or
@@ -21,22 +21,22 @@ public static class ExpertiseExtensions {
         ExpertiseType.Mysticism or
         ExpertiseType.Nobility or
         ExpertiseType.Craft or
-        ExpertiseType.Aim => AttributeType.Intelligence,
+        ExpertiseType.Aim => AttributeType.Inteligencia,
 
         ExpertiseType.Medicine or
         ExpertiseType.Insight or
         ExpertiseType.Perception or
         ExpertiseType.Religion or
         ExpertiseType.Survival or
-        ExpertiseType.Will => AttributeType.Wisdom,
+        ExpertiseType.Will => AttributeType.Sabedoria,
 
         ExpertiseType.AnimalHandling or
         ExpertiseType.Performance or
         ExpertiseType.Diplomacy or
         ExpertiseType.Deception or
         ExpertiseType.Intimidation or
-        ExpertiseType.Gambling => AttributeType.Charisma,
+        ExpertiseType.Gambling => AttributeType.Carisma,
 
-        _ => AttributeType.Intelligence
+        _ => AttributeType.Inteligencia
     };
 }
