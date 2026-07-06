@@ -115,7 +115,7 @@ public class Program
                     Console.SetCursorPosition(initialCursorX, initialCursorY);
                     int cursorX = 0;
                     int cursorY = 0;
-                    Console.Write($"\tRestam {10-totalCost} pontos");
+                    Console.Write($"\tRestam {(10-totalCost).ToString("D2")} pontos");
 
                     foreach (var attr in attributes) {
                         if (attr == currentAttr) {
@@ -128,11 +128,13 @@ public class Program
                     }
 
                     Console.SetCursorPosition(cursorX, cursorY);
+                    Console.Write(new string(' ', 50));
+                    Console.SetCursorPosition(cursorX, cursorY);
                     string input = Console.ReadLine();
 
                     if (!int.TryParse(input, out int val) || val < -1 || val > 4) {
                         Console.SetCursorPosition(cursorX+2, cursorY);
-                        Console.Write("Erro: Digite somente números entre -1 e 4.");
+                        Console.Write(" Erro: Digite somente números entre -1 e 4.");
 
                         Thread.Sleep(2000);
                         continue;
