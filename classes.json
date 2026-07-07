@@ -4,79 +4,339 @@
       "Nome": "Arcanista",
       "InitialHp": 8,
       "HpPerLevel": 2,
-      "ManaPerLevel": 6
+      "ManaPerLevel": 6,
+      "ObrigatoryExpertises": [
+        "Misticismo",
+        "Vontade"
+      ],
+      "OptionalExpertises": [
+        "Conhecimento",
+        "Diplomacia",
+        "Enganacao",
+        "Guerra",
+        "Iniciativa",
+        "Intimidacao",
+        "Intuicao",
+        "Investigacao",
+        "Nobreza",
+        "Oficio",
+        "Percepcao"
+      ],
+      "QtdOptionalExpertises": 2
     },
     {
       "Nome": "Barbaro",
       "InitialHp": 24,
       "HpPerLevel": 6,
-      "ManaPerLevel": 3
+      "ManaPerLevel": 3,
+      "ObrigatoryExpertises": [
+        "Fortitude",
+        "Luta"
+      ],
+      "OptionalExpertises": [
+        "Adestramento",
+        "Atletismo",
+        "Cavalgar",
+        "Iniciativa",
+        "Intimidação",
+        "Ofício",
+        "Percepção",
+        "Pontaria",
+        "Sobrevivência",
+        "Vontade"
+      ],
+      "QtdOptionalExpertises": 4
     },
     {
       "Nome": "Bardo",
       "InitialHp": 12,
       "HpPerLevel": 3,
-      "ManaPerLevel": 4
+      "ManaPerLevel": 4,
+      "ObrigatoryExpertises": [
+        "Atuacao",
+        "Reflexos"
+      ],
+      "OptionalExpertises": [
+        "Acrobacia",
+        "Cavalgar",
+        "Conhecimento",
+        "Diplomacia",
+        "Enganação",
+        "Furtividade",
+        "Iniciativa",
+        "Intuição",
+        "Investigação",
+        "Jogatina",
+        "Ladinagem",
+        "Luta",
+        "Misticismo",
+        "Nobreza",
+        "Percepção",
+        "Pontaria",
+        "Vontade"
+      ],
+      "QtdOptionalExpertises": 6
     },
     {
       "Nome": "Bucaneiro",
       "InitialHp": 16,
       "HpPerLevel": 4,
-      "ManaPerLevel": 3
+      "ManaPerLevel": 3,
+      "ObrigatoryExpertises": [
+        "Luta/Pontaria",
+        "Reflexos"
+      ],
+      "OptionalExpertises": [
+        "Acrobacia",
+        "Atletismo",
+        "Atuação",
+        "Enganação",
+        "Fortitude",
+        "Furtividade",
+        "Iniciativa",
+        "Intimidação",
+        "Jogatina",
+        "Luta",
+        "Ofício",
+        "Percepção",
+        "Pilotagem",
+        "Pontaria"
+      ],
+      "QtdOptionalExpertises": 4
     },
     {
       "Nome": "Caçador",
       "InitialHp": 16,
       "HpPerLevel": 4,
-      "ManaPerLevel": 4
+      "ManaPerLevel": 4,
+      "ObrigatoryExpertises": [
+        "Luta/Pontaria",
+        "Sobrevivencia"
+      ],
+      "OptionalExpertises": [
+        "Adestramento",
+        "Atletismo",
+        "Cavalgar",
+        "Cura",
+        "Fortitude",
+        "Furtividade",
+        "Iniciativa",
+        "Investigação",
+        "Luta",
+        "Ofício",
+        "Percepção",
+        "Pontaria",
+        "Reflexos"
+      ],
+      "QtdOptionalExpertises": 6
     },
     {
       "Nome": "Cavaleiro",
       "InitialHp": 20,
       "HpPerLevel": 5,
-      "ManaPerLevel": 3
+      "ManaPerLevel": 3,
+      "ObrigatoryExpertises": [
+        "Fortitude",
+        "Luta"
+      ],
+      "OptionalExpertises": [
+        "Adestramento",
+        "Atletismo",
+        "Cavalgar",
+        "Diplomacia",
+        "Guerra",
+        "Iniciativa",
+        "Intimidação",
+        "Nobreza",
+        "Percepção",
+        "Vontade"
+      ],
+      "QtdOptionalExpertises": 2
     },
     {
       "Nome": "Clerigo",
       "InitialHp": 16,
       "HpPerLevel": 4,
-      "ManaPerLevel": 5
+      "ManaPerLevel": 5,
+      "ObrigatoryExpertises": [
+        "Religiao",
+        "Vontade"
+      ],
+      "OptionalExpertises": [
+        "Conhecimento",
+        "Cura",
+        "Diplomacia",
+        "Fortitude",
+        "Iniciativa",
+        "Intuição",
+        "Luta",
+        "Misticismo",
+        "Nobreza",
+        "Ofício",
+        "Percepção"
+      ],
+      "QtdOptionalExpertises": 2
     },
     {
       "Nome": "Druida",
       "InitialHp": 16,
       "HpPerLevel": 4,
-      "ManaPerLevel": 4
+      "ManaPerLevel": 4,
+      "ObrigatoryExpertises": [
+        "Sobrevivencia",
+        "Vontade"
+      ],
+      "OptionalExpertises": [
+        "Adestramento",
+        "Atletismo",
+        "Cavalgar",
+        "Conhecimento",
+        "Cura",
+        "Fortitude",
+        "Iniciativa",
+        "Intuição",
+        "Luta",
+        "Misticismo",
+        "Ofício",
+        "Percepção",
+        "Religião"
+      ],
+      "QtdOptionalExpertises": 4
     },
     {
       "Nome": "Guerreiro",
       "InitialHp": 20,
       "HpPerLevel": 5,
-      "ManaPerLevel": 3
+      "ManaPerLevel": 3,
+      "ObrigatoryExpertises": [
+        "Luta/Pontaria",
+        "Fortitude"
+      ],
+      "OptionalExpertises": [
+        "Adestramento",
+        "Atletismo",
+        "Cavalgar",
+        "Guerra",
+        "Iniciativa",
+        "Intimidação",
+        "Luta",
+        "Ofício",
+        "Percepção",
+        "Pontaria",
+        "Reflexos"
+      ],
+      "QtdOptionalExpertises": 2
     },
     {
       "Nome": "Inventor",
       "InitialHp": 12,
       "HpPerLevel": 3,
-      "ManaPerLevel": 4
+      "ManaPerLevel": 4,
+      "ObrigatoryExpertises": [
+        "Oficio",
+        "Vontade"
+      ],
+      "OptionalExpertises": [
+        "Conhecimento",
+        "Cura",
+        "Diplomacia",
+        "Fortitude",
+        "Iniciativa",
+        "Investigação",
+        "Luta",
+        "Misticismo",
+        "Ofício",
+        "Pilotagem",
+        "Percepção",
+        "Pontaria"
+      ],
+      "QtdOptionalExpertises": 4
     },
     {
       "Nome": "Ladino",
       "InitialHp": 12,
       "HpPerLevel": 3,
-      "ManaPerLevel": 4
+      "ManaPerLevel": 4,
+      "ObrigatoryExpertises": [
+        "Ladinagem",
+        "Reflexos"
+      ],
+      "OptionalExpertises": [
+        "Acrobacia",
+        "Atletismo",
+        "Atuação",
+        "Cavalgar",
+        "Conhecimento",
+        "Diplomacia",
+        "Enganação",
+        "Furtividade",
+        "Iniciativa",
+        "Intimidação",
+        "Intuição",
+        "Investigação",
+        "Jogatina",
+        "Luta",
+        "Ofício",
+        "Percepção",
+        "Pilotagem",
+        "Pontaria"
+      ],
+      "QtdOptionalExpertises": 8
     },
     {
       "Nome": "Lutador",
       "InitialHp": 20,
       "HpPerLevel": 5,
-      "ManaPerLevel": 3
+      "ManaPerLevel": 3,
+      "ObrigatoryExpertises": [
+        "Fortitude",
+        "Luta"
+      ],
+      "OptionalExpertises": [
+        "Acrobacia",
+        "Adestramento",
+        "Atletismo",
+        "Enganação",
+        "Furtividade",
+        "Iniciativa",
+        "Intimidação",
+        "Ofício",
+        "Percepção",
+        "Pontaria",
+        "Reflexos"
+      ],
+      "QtdOptionalExpertises": 4
     },
     {
       "Nome": "Nobre",
       "InitialHp": 16,
       "HpPerLevel": 4,
-      "ManaPerLevel": 4
+      "ManaPerLevel": 4,
+      "ObrigatoryExpertises": [
+        "Diplomacia/Intimidacao",
+        "Vontade"
+      ],
+      "OptionalExpertises": [
+        "Adestramento",
+        "Atuação",
+        "Cavalgar",
+        "Conhecimento",
+        "Diplomacia",
+        "Enganação",
+        "Fortitude",
+        "Guerra",
+        "Iniciativa",
+        "Intimidação",
+        "Intuição",
+        "Investigacao",
+        "Jogatina",
+        "Luta",
+        "Nobreza",
+        "Ofício",
+        "Percepção",
+        "Pontaria"
+      ],
+      "QtdOptionalExpertises": 4
     }
   ]
 }

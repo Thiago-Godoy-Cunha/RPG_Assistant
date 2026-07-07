@@ -2,40 +2,40 @@
 namespace RPG_Assistant.Extensions;
 public static class ExpertiseExtensions {
     public static AttributeType GetAssociatedAttribute(this ExpertiseType type) => type switch {
-        ExpertiseType.Athletics or
-        ExpertiseType.Fighting => AttributeType.Forca,
+        ExpertiseType.Atletismo or
+        ExpertiseType.Luta => AttributeType.Forca,
 
-        ExpertiseType.Riding or
-        ExpertiseType.Acrobatics or
-        ExpertiseType.Stealth or
-        ExpertiseType.Initiative or
-        ExpertiseType.Thievery or
-        ExpertiseType.Piloting or
-        ExpertiseType.Reflexes => AttributeType.Destreza,
+        ExpertiseType.Cavalgar or
+        ExpertiseType.Acrobacia or
+        ExpertiseType.Furtividade or
+        ExpertiseType.Iniciativa or
+        ExpertiseType.Ladinagem or
+        ExpertiseType.Pilotagem or
+        ExpertiseType.Reflexos => AttributeType.Destreza,
 
         ExpertiseType.Fortitude => AttributeType.Constituicao,
 
-        ExpertiseType.Knowledge or
-        ExpertiseType.War or
-        ExpertiseType.Investigation or
-        ExpertiseType.Mysticism or
-        ExpertiseType.Nobility or
-        ExpertiseType.Craft or
-        ExpertiseType.Aim => AttributeType.Inteligencia,
+        ExpertiseType.Conhecimento or
+        ExpertiseType.Guerra or
+        ExpertiseType.Investigacao or
+        ExpertiseType.Misticismo or
+        ExpertiseType.Nobreza or
+        ExpertiseType.Oficio or
+        ExpertiseType.Pontaria => AttributeType.Inteligencia,
 
-        ExpertiseType.Medicine or
-        ExpertiseType.Insight or
-        ExpertiseType.Perception or
-        ExpertiseType.Religion or
-        ExpertiseType.Survival or
-        ExpertiseType.Will => AttributeType.Sabedoria,
+        ExpertiseType.Cura or
+        ExpertiseType.Intuicao or
+        ExpertiseType.Percepcao or
+        ExpertiseType.Religiao or
+        ExpertiseType.Sobrevivencia or
+        ExpertiseType.Vontade => AttributeType.Sabedoria,
 
-        ExpertiseType.AnimalHandling or
-        ExpertiseType.Performance or
-        ExpertiseType.Diplomacy or
-        ExpertiseType.Deception or
-        ExpertiseType.Intimidation or
-        ExpertiseType.Gambling => AttributeType.Carisma,
+        ExpertiseType.Adestramento or
+        ExpertiseType.Atuacao or
+        ExpertiseType.Diplomacia or
+        ExpertiseType.Enganacao or
+        ExpertiseType.Intimidacao or
+        ExpertiseType.Jogatina => AttributeType.Carisma,
 
         _ => AttributeType.Inteligencia
     };
