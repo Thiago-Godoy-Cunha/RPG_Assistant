@@ -1,0 +1,14 @@
+{
+  "habilidades de classe": [
+    {
+      "nome": "Destruidor",
+      "descricao": "Quando causa dano com uma arma corpo a corpo de duas mãos, você pode rolar novamente qualquer resultado 1 ou 2 das rolagens de dano da arma.",
+      "requisito": "For 1"
+    },
+    {
+      "nome": "Furia",
+      "descricao": "Você pode gastar 2 PM para invocar uma fúria selvagem. Você recebe +2 em testes de ataque e rolagens de dano corpo a corpo, mas não  pode fazer nenhuma ação que exija calma e concen- tração (como usar a perícia Furtividade ou lançar  magias). A cada cinco níveis, pode gastar +1 PM para aumentar os bônus em +1. A Fúria termina se, ao fim da rodada, você não tiver atacado nem sido alvo de um efeito (ataque, habilidade, magia...) hostil.",
+      "requisito": "Nenhum"
+    }
+  ]
+}
