@@ -70,9 +70,8 @@ public class Character {
 
     public Class InitialClass => _initialClass;
 
-    public List<Power> ChosenPowers => _chosenPowers;
-
-    public List<Spell> LearnedSpells => _learnedSpells;
+    public List<ExpertiseType> TrainedExpertises => _trainedExpertises;
+    public Dictionary<AttributeType, sbyte> Attributes  => _attributes;
 
     public void TrainExpertise(ExpertiseType type) => _trainedExpertises.Add(type); 
     public void UntrainExpertise(ExpertiseType type) => _trainedExpertises.Remove(type);
@@ -123,6 +122,7 @@ public class Character {
     }
 
     public void SetAttributes(Dictionary<AttributeType, sbyte> attributes) => _attributes = attributes;
+
     //public void LearnSpell(Class casterClass, Spell spell) {
     //    if (!CanLearnSpell(casterClass, spell))
     //        throw new InvalidOperationException($"O personagem não tem acesso ao {spell.Circle}° círculo para aprender: {spell.Name}.");
