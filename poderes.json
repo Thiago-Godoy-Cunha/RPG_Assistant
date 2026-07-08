@@ -1,0 +1,969 @@
+{
+  "poderes de combate": [
+      {
+        "nome": "Acuidade com Arma",
+        "descricao": "Quando usa uma arma corpo a corpo leve ou uma arma de arremesso, você pode usar sua Destreza em vez de Força nos testes de ataque e rolagens de dano.",
+        "requisito": "Des 1"
+      },
+      {
+        "nome": "Arma Secundária Grande",
+        "descricao": "Você pode empunhar duas armas de uma mão com o poder Estilo de Duas Armas.",
+        "requisito": "Estilo de Duas Armas"
+      },
+      {
+        "nome": "Arremesso Potente",
+        "descricao": "Quando usa uma arma de arremesso, você pode usar sua Força em vez de Destreza nos testes de ataque. Se você possuir o poder Ataque Poderoso, poderá usá-lo com armas de arremesso.",
+        "requisito": "For 1, Estilo de Arremesso"
+      },
+      {
+        "nome": "Arremesso Múltiplo",
+        "descricao": "Uma vez por rodada, quando faz um ataque com uma arma de arremesso, você pode gastar 1 PM para fazer um ataque adicional contra o mesmo alvo, arremessando outra arma de arremesso.",
+        "requisito": "Des 1, Estilo de Arremesso"
+      },
+      {
+        "nome": "Ataque com Escudo",
+        "descricao": "Uma vez por rodada, se estiver empunhando um escudo e fizer a ação agredir, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com o escudo. Este ataque não faz você perder o bônus do escudo na Defesa.",
+        "requisito": "Estilo de Arma e Escudo"
+      },
+      {
+        "nome": "Ataque Pesado",
+        "descricao": "Quando faz um ataque corpo a corpo com uma arma de duas mãos, você pode pagar 1 PM. Se fizer isso e acertar o ataque, além do dano você faz uma manobra derrubar ou empurrar contra o alvo como uma ação livre (use o resultado do ataque como o teste de manobra).",
+        "requisito": "Estilo de Duas Mãos"
+      },
+      {
+        "nome": "Ataque Poderoso",
+        "descricao": "Sempre que faz um ataque corpo a corpo, você pode sofrer –2 no teste de ataque para receber +5 na rolagem de dano.",
+        "requisito": "For 1"
+      },
+      {
+        "nome": "Ataque Preciso",
+        "descricao": "Se estiver empunhando uma arma corpo a corpo em uma das mãos e nada na outra, você recebe +2 na margem de ameaça e +1 no multiplicador de crítico com ela.",
+        "requisito": "Estilo de Uma Arma"
+      },
+      {
+        "nome": "Bloqueio com Escudo",
+        "descricao": "Quando sofre dano, você pode gastar 1 PM para receber redução de dano igual ao bônus na Defesa que seu escudo fornece contra este dano. Você só pode usar este poder se estiver usando um escudo.",
+        "requisito": "Estilo de Arma e Escudo"
+      },
+      {
+        "nome": "Carga de Cavalaria",
+        "descricao": "Quando faz uma investida montada, você causa +2d8 pontos de dano. Além disso, pode continuar se movendo depois do ataque. Você deve se mover em linha reta e seu movimento máximo ainda é o dobro do seu deslocamento.",
+        "requisito": "Ginete"
+      },
+      {
+        "nome": "Combate Defensivo",
+        "descricao": "Quando usa a ação agredir, você pode usar este poder. Se fizer isso, até seu próximo turno, sofre –2 em todos os testes de ataque, mas recebe +5 na Defesa.",
+        "requisito": "Int 1"
+      },
+      {
+        "nome": "Derrubar Aprimorado",
+        "descricao": "Você recebe +2 em testes de ataque para derrubar. Quando derruba uma criatura com essa manobra, pode gastar 1 PM para fazer um ataque extra contra ela.",
+        "requisito": "Combate Defensivo"
+      },
+      {
+        "nome": "Disparo Preciso",
+        "descricao": "Você recebe +2 em testes de ataque com armas de disparo.",
+        "requisito": "Estilo de Disparo"
+      },
+      {
+        "nome": "Disparo Rápido",
+        "descricao": "Se estiver empunhando uma arma de disparo que possa recarregar como uma ação livre e usar a ação agredir para fazer um ataque, você pode gastar 2 PM para realizar um ataque adicional com essa arma.",
+        "requisito": "Des 1, Estilo de Disparo"
+      },
+      {
+        "nome": "Empunhadura Poderosa",
+        "descricao": "Você pode usar uma arma feita para uma categoria de tamanho maior que a sua com uma penalidade de apenas –2 nos testes de ataque (em vez de –5). A arma ocupa dois espaços a mais que o normal.",
+        "requisito": "For 3"
+      },
+      {
+        "nome": "Encouraçado",
+        "descricao": "Você recebe +2 na Defesa enquanto estiver usando armadura pesada.",
+        "requisito": "Uso de Armaduras Pesadas"
+      },
+      {
+        "nome": "Escaramuça",
+        "descricao": "Se, durante seu turno, você se mover pelo menos 6m, recebe +2 nas rolagens de dano e na Defesa até o início do seu próximo turno.",
+        "requisito": "Des 2"
+      },
+      {
+        "nome": "Esquiva",
+        "descricao": "Você recebe +2 na Defesa.",
+        "requisito": "Des 1"
+      },
+      {
+        "nome": "Estilo de Arma e Escudo",
+        "descricao": "Se estiver usando um escudo, você recebe +2 na Defesa.",
+        "requisito": "Nenhum"
+      },
+      {
+        "nome": "Estilo de Arremesso",
+        "descricao": "Você recebe +2 nas rolagens de dano com armas de arremesso.",
+        "requisito": "Nenhum"
+      },
+      {
+        "nome": "Estilo de Disparo",
+        "descricao": "Se estiver usando uma arma de disparo, você soma sua Destreza nas rolagens de dano.",
+        "requisito": "Nenhum"
+      },
+      {
+        "nome": "Estilo de Duas Armas",
+        "descricao": "Se estiver empunhando duas armas (e pelo menos uma delas for leve) e fizer a ação agredir, pode fazer dois ataques, um com cada arma. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno.",
+        "requisito": "Des 2"
+      },
+      {
+        "nome": "Estilo de Duas Mãos",
+        "descricao": "Se estiver usando uma arma corpo a corpo com as duas mãos, você recebe +5 nas rolagens de dano.",
+        "requisito": "Nenhum"
+      },
+      {
+        "nome": "Estilo de Uma Arma",
+        "descricao": "Se estiver empunhando uma única arma corpo a corpo e nenhuma outra arma, recebe +2 em testes de ataque e na Defesa.",
+        "requisito": "Nenhum"
+      },
+      {
+        "nome": "Fintar Aprimorado",
+        "descricao": "Você recebe +2 em testes de Enganação para fintar e, quando deixa um inimigo desprevenido com uma finta, pode gastar 1 PM para fazer um ataque corpo a corpo contra ele como uma ação livre.",
+        "requisito": "Int 1, Treinado em Enganação"
+      },
+      {
+        "nome": "Foco em Arma",
+        "descricao": "Escolha um tipo de arma. Você recebe +2 em testes de ataque com as armas escolhidas. Você pode escolher este poder outras vezes para armas diferentes.",
+        "requisito": "Nenhum"
+      },
+      {
+        "nome": "Ginete",
+        "descricao": "Você passa automaticamente em testes de Cavalgar para não cair da montaria quando sofre dano. Além disso, não sofre a penalidade de –5 em testes de ataque por estar montado.",
+        "requisito": "Treinado em Cavalgar"
+      },
+      {
+        "nome": "Mira Apurada",
+        "descricao": "Você pode usar a ação mirar como uma ação de movimento em vez de uma ação completa.",
+        "requisito": "Estilo de Disparo"
+      },
+      {
+        "nome": "Piqueiro",
+        "descricao": "Uma vez por rodada, se estiver empunhando uma arma alongada e um inimigo entrar voluntariamente em seu alcance corpo a corpo, você pode gastar 1 PM para fazer um ataque corpo a corpo contra este oponente com esta arma. Se o oponente tiver se aproximado fazendo uma investida, seu ataque causa dois dados de dano extra do mesmo tipo.",
+        "requisito": "Proficiência com armas alongadas"
+      },
+      {
+        "nome": "Presença Aterradora",
+        "descricao": "Quando reduz um inimigo a 0 PV ou menos ou consegue um acerto crítico, você pode gastar 1 PM. Se fizer isso, todos os inimigos em alcance curto devem passar em um teste de Vontade ou ficam abalados até o fim da cena.",
+        "requisito": "For 2"
+      },
+      {
+        "nome": "Reflexos de Combate",
+        "descricao": "Você ganha uma ação de movimento adicional em seu primeiro turno de cada combate.",
+        "requisito": "Des 1"
+      },
+      {
+        "nome": "Saque Rápido",
+        "descricao": "Você pode sacar ou guardar itens como uma ação livre. Além disso, recebe +2 em testes de Iniciativa.",
+        "requisito": "Nenhum"
+      },
+      {
+        "nome": "Trespassar",
+        "descricao": "Quando reduz um inimigo a 0 PV ou menos com um ataque corpo a corpo, pode gastar 1 PM para fazer outro ataque corpo a corpo contra outra criatura adjacente.",
+        "requisito": "Ataque Poderoso"
+      },
+      {
+        "nome": "Vitalidade",
+        "descricao": "Você recebe +1 PV por nível.",
+        "requisito": "Con 1"
+      }
+  ],
+  "poderes de destino": [
+    {
+      "nome": "Acrobático",
+      "descricao": "Você pode usar sua Destreza em vez de Força em testes de Atletismo. Além disso, terreno difícil não reduz seu deslocamento nem o impede de realizar investidas.",
+      "requisito": "Des 2"
+    },
+    {
+      "nome": "Ao Sabor do Destino",
+      "descricao": "Confiando em suas próprias habilidades (ou em sua própria sorte), você abre mão de usar itens mágicos. Sua autoconfiança fornece benefícios de acordo com seu nível de personagem: 6º nível: +2 em uma perícia; 7º: +1 na Defesa; 8º: +1 nas rolagens de dano; 9º: +1 em um atributo; 11º: +2 em uma perícia; 12º: +2 na Defesa; 13º: +2 nas rolagens de dano; 14º: +1 em um atributo; 16º: +2 em uma perícia; 17º: +3 na Defesa; 18º: +3 nas rolagens de dano; 19º: +1 em um atributo. Os bônus não são cumulativos e devem ser aplicados em atributos ou perícias diferentes. Se você utilizar voluntariamente qualquer item mágico (exceto poções), perde o benefício deste poder até o fim da aventura. Você ainda pode lançar magias, receber magias benéficas ou beneficiar-se de itens usados por outros.",
+      "requisito": "6º nível de personagem"
+    },
+    {
+      "nome": "Aparência Inofensiva",
+      "descricao": "A primeira criatura inteligente (Int –3 ou maior) que atacar você em uma cena deve fazer um teste de Vontade (CD Car). Se falhar, perderá sua ação. Este poder só funciona uma vez por cena; independentemente de a criatura falhar ou não no teste, poderá atacá-lo normalmente nas rodadas seguintes.",
+      "requisito": "Car 1"
+    },
+    {
+      "nome": "Atlético",
+      "descricao": "Você recebe +2 em Atletismo e +3m em seu deslocamento.",
+      "requisito": "For 2"
+    },
+    {
+      "nome": "Atraente",
+      "descricao": "Você recebe +2 em testes de perícias baseadas em Carisma contra criaturas que possam se sentir fisicamente atraídas por você.",
+      "requisito": "Car 1"
+    },
+    {
+      "nome": "Comandar",
+      "descricao": "Você pode gastar uma ação de movimento e 1 PM para gritar ordens para seus aliados em alcance médio. Eles recebem +1 em testes de perícia até o fim da cena.",
+      "requisito": "Car 1"
+    },
+    {
+      "nome": "Costas Largas",
+      "descricao": "Seu limite de carga aumenta em 5 espaços e você pode se beneficiar de um item vestido adicional.",
+      "requisito": "Con 1, For 1"
+    },
+    {
+      "nome": "Foco em Perícia",
+      "descricao": "Escolha uma perícia. Quando faz um teste dessa perícia, você pode gastar 1 PM para rolar dois dados e usar o melhor resultado. Você pode escolher este poder outras vezes para perícias diferentes. Este poder não pode ser aplicado em Luta e Pontaria.",
+      "requisito": "Treinado na perícia escolhida"
+    },
+    {
+      "nome": "Inventário Organizado",
+      "descricao": "Você soma sua Inteligência ao limite de espaços que pode carregar. Para você, itens muito leves ou pequenos que normalmente ocupam meio espaço passam a ocupar apenas 1/4 de espaço.",
+      "requisito": "Int 1"
+    },
+    {
+      "nome": "Investigador",
+      "descricao": "Você recebe +2 em Investigação e soma sua Inteligência em testes de Intuição.",
+      "requisito": "Int 1"
+    },
+    {
+      "nome": "Lobo Solitário",
+      "descricao": "Você recebe +1 em testes de perícia e Defesa se estiver sem nenhum aliado em alcance curto. Além disso, não sofre penalidade por usar Cura em si mesmo.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Medicina",
+      "descricao": "Você pode gastar uma ação completa para fazer um teste de Cura (CD 15) em uma criatura. Se passar, ela recupera 1d6 PV, mais 1d6 para cada 5 pontos pelos quais o resultado exceder a CD. Este poder só pode ser usado uma vez por dia em cada criatura.",
+      "requisito": "Sab 1, Treinado em Cura"
+    },
+    {
+      "nome": "Parceiro",
+      "descricao": "Você possui um parceiro animal ou humanoide que o acompanha em aventuras. Em termos de jogo, ele é um parceiro iniciante de um tipo à sua escolha. O parceiro obedece às suas ordens e pode ser substituído no início da próxima aventura caso seja perdido.",
+      "requisito": "Treinado em Adestramento (parceiro animal) ou Diplomacia (parceiro humanoide), 5º nível de personagem"
+    },
+    {
+      "nome": "Sentidos Aguçados",
+      "descricao": "Você recebe +2 em Percepção, não fica desprevenido contra inimigos que não possa perceber e, sempre que errar um ataque devido à camuflagem, pode rolar novamente o dado da chance de falha.",
+      "requisito": "Sab 1, Treinado em Percepção"
+    },
+    {
+      "nome": "Sortudo",
+      "descricao": "Quando faz um teste, você pode gastar 3 PM para rolá-lo novamente.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Surto Heroico",
+      "descricao": "Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Torcida",
+      "descricao": "Você recebe +2 em testes de perícia e Defesa quando tem a torcida a seu favor. Considera-se torcida qualquer número de criaturas inteligentes em alcance médio que não esteja realizando nenhuma ação além de torcer por você.",
+      "requisito": "Car 1"
+    },
+    {
+      "nome": "Treinamento em Perícia",
+      "descricao": "Você se torna treinado em uma perícia à sua escolha. Pode escolher este poder outras vezes para perícias diferentes.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Venefício",
+      "descricao": "Quando usa um veneno, você não corre risco de se envenenar acidentalmente. Além disso, a CD para resistir aos seus venenos aumenta em +2.",
+      "requisito": "Treinado em Ofício (alquimista)"
+    },
+    {
+      "nome": "Vontade de Ferro",
+      "descricao": "Você recebe +1 PM para cada dois níveis de personagem e +2 em Vontade.",
+      "requisito": "Sab 1"
+    }
+  ],
+  "poderes de magia": [
+    {
+      "nome": "Celebrar Ritual",
+      "descricao": "Você pode lançar magias como rituais. Isso dobra seu limite de PM, mas muda a execução para 1 hora (ou o dobro, o que for maior) e exige um gasto de T$ 10 por PM gasto (em incensos, oferendas...). Assim, um arcanista de 8º nível pode lançar uma magia de 16 PM gastando T$ 160. Magias lançadas como rituais não podem ser armazenadas em itens.",
+      "requisito": "Lançar magias, Treinado em Misticismo ou Religião, 8º nível de personagem"
+    },
+    {
+      "nome": "Escrever Pergaminho",
+      "descricao": "Você pode usar a perícia Ofício (escriba) para fabricar pergaminhos com magias que conheça. De acordo com o mestre, você pode usar objetos similares, como runas, tabuletas de argila etc.",
+      "requisito": "Lançar magias, Habilidade de classe Magias, Treinado em Ofício (escriba)"
+    },
+    {
+      "nome": "Foco em Magia",
+      "descricao": "Escolha uma magia que possa lançar. Seu custo diminui em –1 PM (cumulativo com outras reduções de custo). Você pode escolher este poder outras vezes para magias diferentes.",
+      "requisito": "Lançar magias"
+    },
+    {
+      "nome": "Magia Acelerada",
+      "descricao": "Aprimoramento. Muda a execução da magia para ação livre. Você só pode aplicar este aprimoramento em magias com execução de movimento, padrão ou completa e só pode lançar uma magia como ação livre por rodada. Custo: +4 PM.",
+      "requisito": "Lançar magias, Magias de 2º círculo"
+    },
+    {
+      "nome": "Magia Ampliada",
+      "descricao": "Aprimoramento. Aumenta o alcance da magia em um passo (de curto para médio, de médio para longo) ou dobra a área de efeito da magia. Por exemplo, uma Bola de Fogo ampliada tem seu alcance aumentado para longo ou sua área aumentada para 12m de raio. Custo: +2 PM.",
+      "requisito": "Lançar magias"
+    },
+    {
+      "nome": "Magia Discreta",
+      "descricao": "Aprimoramento. Você lança a magia sem gesticular e falar, usando apenas concentração. Isso permite lançar magias com as mãos presas, amordaçado etc. Também permite lançar magias arcanas usando armadura sem teste de Misticismo. Outros personagens só percebem que você lançou uma magia se passarem em um teste de Misticismo (CD 20). Custo: +2 PM.",
+      "requisito": "Lançar magias"
+    },
+    {
+      "nome": "Magia Ilimitada",
+      "descricao": "Você soma seu atributo-chave no limite de PM que pode gastar em uma magia. Por exemplo, um arcanista de 5º nível com Inteligência 4 e este poder pode gastar até 9 PM em cada magia.",
+      "requisito": "Lançar magias"
+    },
+    {
+      "nome": "Preparar Poção",
+      "descricao": "Você pode usar a perícia Ofício (alquimista) para fabricar poções com magias que conheça de 1º e 2º círculos.",
+      "requisito": "Lançar magias, Habilidade de classe Magias, Treinado em Ofício (alquimista)"
+    }
+  ],
+  "poderes concedidos": [
+    {
+      "nome": "Afinidade com a Tormenta",
+      "descricao": "Você recebe +10 em testes de resistência contra efeitos da Tormenta, de suas criaturas e de devotos de Aharadak. Além disso, seu primeiro poder da Tormenta não conta para perda de Carisma.",
+      "requisito": "Devoto de Aharadak"
+    },
+    {
+      "nome": "Almejar o Impossível",
+      "descricao": "Quando faz um teste de perícia, um resultado de 19 ou mais no dado sempre é um sucesso, não importando o valor a ser alcançado.",
+      "requisito": "Devoto de Thwor ou Valkaria"
+    },
+    {
+      "nome": "Anfíbio",
+      "descricao": "Você pode respirar embaixo d'água e adquire deslocamento de natação igual a seu deslocamento terrestre.",
+      "requisito": "Devoto de Oceano"
+    },
+    {
+      "nome": "Apostar com o Trapaceiro",
+      "descricao": "Quando faz um teste de perícia, você pode gastar 1 PM para apostar com Hyninn. Você e o mestre rolam 1d20, mas o mestre mantém seu resultado em segredo. Você escolhe usar seu próprio resultado ou o resultado oculto do mestre.",
+      "requisito": "Devoto de Hyninn"
+    },
+    {
+      "nome": "Armas da Ambição",
+      "descricao": "Você recebe +1 em testes de ataque e na margem de ameaça com armas nas quais é proficiente.",
+      "requisito": "Devoto de Valkaria"
+    },
+    {
+      "nome": "Arsenal das Profundezas",
+      "descricao": "Você recebe +2 nas rolagens de dano com azagaias, lanças e tridentes e o multiplicador de crítico dessas armas aumenta em +1.",
+      "requisito": "Devoto de Oceano"
+    },
+    {
+      "nome": "Astúcia da Serpente",
+      "descricao": "Você recebe +2 em Enganação, Furtividade e Intuição.",
+      "requisito": "Devoto de Sszzaas"
+    },
+    {
+      "nome": "Ataque Piedoso",
+      "descricao": "Você pode usar armas corpo a corpo para causar dano não letal sem sofrer a penalidade de –5 no teste de ataque.",
+      "requisito": "Devoto de Lena ou Thyatis"
+    },
+    {
+      "nome": "Aura de Medo",
+      "descricao": "Você pode gastar 2 PM para gerar uma aura de medo de 9m de raio até o fim da cena. Inimigos que entrarem nela devem passar em um teste de Vontade (CD Car) ou ficam abalados até o fim da cena. Quem passar fica imune por um dia.",
+      "requisito": "Devoto de Kallyadranoch"
+    },
+    {
+      "nome": "Aura de Paz",
+      "descricao": "Você pode gastar 2 PM para gerar uma aura de paz de 9m de raio até o fim da cena. Inimigos que tentarem realizar ações hostis contra você devem passar em um teste de Vontade (CD Car) ou perdem a ação. Quem passar fica imune por um dia.",
+      "requisito": "Devoto de Marah"
+    },
+    {
+      "nome": "Aura Restauradora",
+      "descricao": "Efeitos de cura usados por você e aliados em um raio de 9m recuperam +1 PV por dado.",
+      "requisito": "Devoto de Lena"
+    },
+    {
+      "nome": "Bênção do Mana",
+      "descricao": "Você recebe +1 PM para cada nível ímpar.",
+      "requisito": "Devoto de Wynna"
+    },
+    {
+      "nome": "Carícia Sombria",
+      "descricao": "Você pode gastar 1 PM e uma ação padrão para tocar uma criatura, causando 2d6 de dano de trevas (Fortitude CD Sab reduz à metade) e recuperando PV iguais à metade do dano causado. Também pode aprender Toque Vampírico como magia divina; se já a conhecer, seu custo diminui em –1 PM.",
+      "requisito": "Devoto de Tenebra"
+    },
+    {
+      "nome": "Centelha Mágica",
+      "descricao": "Escolha uma magia arcana ou divina de 1º círculo. Você aprende e pode lançar essa magia.",
+      "requisito": "Devoto de Wynna"
+    },
+    {
+      "nome": "Compreender os Ermos",
+      "descricao": "Você recebe +2 em Sobrevivência e pode usar Sabedoria em testes de Adestramento em vez de Carisma.",
+      "requisito": "Devoto de Allihanna"
+    },
+    {
+      "nome": "Conhecimento Enciclopédico",
+      "descricao": "Você se torna treinado em duas perícias baseadas em Inteligência à sua escolha.",
+      "requisito": "Devoto de Tanna-Toh"
+    },
+    {
+      "nome": "Conjurar Arma",
+      "descricao": "Você pode gastar 1 PM para invocar uma arma corpo a corpo ou de arremesso com a qual seja proficiente. A arma recebe +1 em ataques e dano, é considerada mágica e dura pela cena. Caso seja uma arma de disparo, cria 20 munições.",
+      "requisito": "Devoto de Arsenal"
+    },
+    {
+      "nome": "Coragem Total",
+      "descricao": "Você é imune a efeitos de medo, mágicos ou não. Este poder não elimina fobias raciais.",
+      "requisito": "Devoto de Arsenal, Khalmyr, Lin-Wu ou Valkaria"
+    },
+    {
+      "nome": "Cura Gentil",
+      "descricao": "Você soma seu Carisma aos PV restaurados por seus efeitos mágicos de cura.",
+      "requisito": "Devoto de Lena"
+    },
+    {
+      "nome": "Curandeira Perfeita",
+      "descricao": "Você sempre pode escolher 10 em testes de Cura. Além disso, não sofre penalidade por usar a perícia sem maleta de medicamentos e recebe bônus ao utilizá-la.",
+      "requisito": "Devoto de Lena"
+    },
+    {
+      "nome": "Dedo Verde",
+      "descricao": "Você aprende e pode lançar Controlar Plantas. Se aprender novamente essa magia, seu custo diminui em –1 PM.",
+      "requisito": "Devoto de Allihanna"
+    },
+    {
+      "nome": "Descanso Natural",
+      "descricao": "Para você, dormir ao relento conta como descanso confortável.",
+      "requisito": "Devoto de Allihanna"
+    },
+    {
+      "nome": "Dom da Esperança",
+      "descricao": "Você soma sua Sabedoria aos PV em vez de Constituição e torna-se imune às condições alquebrado, esmorecido e frustrado.",
+      "requisito": "Devoto de Marah"
+    },
+    {
+      "nome": "Dom da Imortalidade",
+      "descricao": "Sempre que morre, volta à vida após 3d6 dias. Não pode ser escolhido por quem possui Dom da Ressurreição.",
+      "requisito": "Devoto de Thyatis, Paladino"
+    },
+    {
+      "nome": "Dom da Profecia",
+      "descricao": "Você aprende e pode lançar Augúrio. Se aprender novamente essa magia, seu custo diminui em –1 PM. Além disso, pode gastar 2 PM para receber +2 em um teste.",
+      "requisito": "Devoto de Thyatis"
+    },
+    {
+      "nome": "Dom da Ressurreição",
+      "descricao": "Você pode gastar uma ação completa e todos os PM para ressuscitar uma criatura morta há menos de um ano. Ela retorna com 1 PV, 0 PM e perde 1 ponto de Constituição permanentemente. Só pode ser usada uma vez por criatura.",
+      "requisito": "Devoto de Thyatis, Clérigo"
+    },
+    {
+      "nome": "Dom da Verdade",
+      "descricao": "Você pode gastar 2 PM para receber +5 em Intuição e em testes de Percepção contra Enganação e Furtividade até o fim da cena.",
+      "requisito": "Devoto de Khalmyr"
+    },
+    {
+      "nome": "Escamas Dracônicas",
+      "descricao": "Você recebe +2 na Defesa e em Fortitude.",
+      "requisito": "Devoto de Kallyadranoch"
+    },
+    {
+      "nome": "Escudo Mágico",
+      "descricao": "Sempre que lança uma magia, recebe um bônus na Defesa igual ao círculo da magia até o início do seu próximo turno.",
+      "requisito": "Devoto de Wynna"
+    },
+    {
+      "nome": "Espada Justiceira",
+      "descricao": "Você pode gastar 1 PM para aumentar em um passo o dano de uma espada (ou outra arma de corte corpo a corpo) até o fim da cena.",
+      "requisito": "Devoto de Khalmyr"
+    },
+    {
+      "nome": "Espada Solar",
+      "descricao": "Você pode gastar 1 PM para fazer uma arma de corte corpo a corpo causar +1d6 de dano de fogo até o fim da cena.",
+      "requisito": "Devoto de Azgher"
+    },
+    {
+      "nome": "Êxtase da Loucura",
+      "descricao": "Sempre que uma ou mais criaturas falham em um teste de Vontade contra uma de suas habilidades mágicas, você recebe 1 PM temporário cumulativo, até um máximo igual à sua Sabedoria por cena.",
+      "requisito": "Devoto de Aharadak ou Nimb"
+    },
+    {
+      "nome": "Familiar Ofídico",
+      "descricao": "Você recebe um familiar cobra, que não conta em seu limite de parceiros.",
+      "requisito": "Devoto de Sszzaas"
+    },
+    {
+      "nome": "Farsa do Fingidor",
+      "descricao": "Você aprende e pode lançar Criar Ilusão. Se aprender novamente essa magia, seu custo diminui em –1 PM.",
+      "requisito": "Devoto de Hyninn"
+    },
+    {
+      "nome": "Fé Guerreira",
+      "descricao": "Você pode usar Sabedoria para Guerra em vez de Inteligência. Além disso, em combate, pode gastar 2 PM para substituir um teste de perícia (exceto ataque) por um teste de Guerra.",
+      "requisito": "Devoto de Arsenal"
+    },
+    {
+      "nome": "Forma de Macaco",
+      "descricao": "Você pode gastar uma ação completa e 2 PM para se transformar em um macaco. Você adquire tamanho Minúsculo (o que fornece +5 em Furtividade e –5 em testes de manobra) e recebe deslocamento de escalar 9m. Seu equipamento desaparece (e você perde seus benefícios) até você voltar ao normal, mas suas outras estatísticas não são alteradas. A transformação dura indefinidamente, mas termina caso você faça um ataque, lance uma magia ou sofra dano.",
+      "requisito": "Devoto de Hyninn"
+    },
+    {
+      "nome": "Fulgor Solar",
+      "descricao": "Você recebe redução de frio e trevas 5. Além disso, quando é alvo de um ataque você pode gastar 1 PM para emitir um clarão solar que deixa o atacante ofuscado por uma rodada.",
+      "requisito": "Devoto de Azgher"
+    },
+    {
+      "nome": "Fúria Divina",
+      "descricao": "Você pode gastar 2 PM para invocar uma fúria selvagem, tornando-se temível em combate. Até o fim da cena, você recebe +2 em testes de ataque e rolagens de dano corpo a corpo, mas não pode executar nenhuma ação que exija paciência ou concentração (como usar Furtividade ou lançar magias). Se usar este poder em conjunto com a habilidade Fúria, ela também dura uma cena.",
+      "requisito": "Devoto de Thwor"
+    },
+    {
+      "nome": "Golpista Divino",
+      "descricao": "Você recebe +2 em Enganação, Jogatina e Ladinagem.",
+      "requisito": "Devoto de Hyninn"
+    },
+    {
+      "nome": "Habitante do Deserto",
+      "descricao": "Você recebe resistência a fogo 10 e pode pagar 1 PM para criar água pura e potável suficiente para um odre ou recipiente pequeno.",
+      "requisito": "Devoto de Azgher"
+    },
+    {
+      "nome": "Inimigo de Tenebra",
+      "descricao": "Seus ataques e habilidades causam +1d6 pontos de dano contra mortos-vivos. Quando você usa um efeito que gera luz, o alcance da iluminação dobra.",
+      "requisito": "Devoto de Azgher"
+    },
+    {
+      "nome": "Kiai Divino",
+      "descricao": "Uma vez por rodada, quando faz um ataque corpo a corpo, você pode pagar 3 PM. Se acertar o ataque, causa dano máximo, sem necessidade de rolar dados.",
+      "requisito": "Devoto de Lin-Wu"
+    },
+    {
+      "nome": "Liberdade Divina",
+      "descricao": "Você pode gastar 2 PM para receber imunidade a efeitos de movimento por uma rodada.",
+      "requisito": "Devoto de Valkaria"
+    },
+    {
+      "nome": "Manto da Penumbra",
+      "descricao": "Você aprende e pode lançar Escuridão. Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
+      "requisito": "Devoto de Tenebra"
+    },
+    {
+      "nome": "Mente Analítica",
+      "descricao": "Você recebe +2 em Intuição, Investigação e Vontade.",
+      "requisito": "Devoto de Tanna-Toh"
+    },
+    {
+      "nome": "Mente Vazia",
+      "descricao": "Você recebe +2 em Iniciativa, Percepção e Vontade.",
+      "requisito": "Devoto de Lin-Wu"
+    },
+    {
+      "nome": "Mestre dos Mares",
+      "descricao": "Você pode falar com animais aquáticos (como o efeito da magia Voz Divina) e aprende e pode lançar Acalmar Animal, mas apenas contra criaturas aquáticas. Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
+      "requisito": "Devoto de Oceano"
+    },
+    {
+      "nome": "Olhar Amedrontador",
+      "descricao": "Você aprende e pode lançar Amedrontar. Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
+      "requisito": "Devoto de Megalokk ou Thwor"
+    },
+    {
+      "nome": "Palavras de Bondade",
+      "descricao": "Você aprende e pode lançar Enfeitiçar. Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
+      "requisito": "Devoto de Marah"
+    },
+    {
+      "nome": "Percepção Temporal",
+      "descricao": "Você pode gastar 3 PM para somar sua Sabedoria (limitada por seu nível e não cumulativa com outros efeitos) aos testes de ataque, Defesa e Reflexos até o fim da cena.",
+      "requisito": "Devoto de Aharadak"
+    },
+    {
+      "nome": "Pesquisa Abençoada",
+      "descricao": "Após uma hora pesquisando seus livros e anotações, você pode repetir um teste de perícia baseada em Inteligência ou Sabedoria realizado desde a última cena. Recebe +2 se tiver acesso a uma biblioteca pequena ou +5 em uma biblioteca de templo ou universidade.",
+      "requisito": "Devoto de Tanna-Toh"
+    },
+    {
+      "nome": "Poder Oculto",
+      "descricao": "Você pode gastar uma ação de movimento e 2 PM para invocar a força, rapidez ou vigor dos loucos. Role 1d6 para receber +2 em Força, Destreza ou Constituição até o fim da cena.",
+      "requisito": "Devoto de Nimb"
+    },
+    {
+      "nome": "Sopro do Mar",
+      "descricao": "Você pode gastar uma ação padrão e 1 PM para soprar um cone de vento marinho de 6m. Criaturas na área sofrem 2d6 pontos de dano de frio (Reflexos CD Sab reduz à metade). Você também pode aprender Sopro das Uivantes como magia divina com custo reduzido.",
+      "requisito": "Devoto de Oceano"
+    },
+    {
+      "nome": "Sorte dos Loucos",
+      "descricao": "Quando faz um teste, você pode pagar 1 PM para rolá-lo novamente (inclusive mais de uma vez). Se ainda falhar, perde 1d6 PM para cada uso deste poder no mesmo teste.",
+      "requisito": "Devoto de Nimb"
+    },
+    {
+      "nome": "Talento Artístico",
+      "descricao": "Você recebe +2 em Acrobacia, Atuação e Diplomacia.",
+      "requisito": "Devoto de Marah"
+    },
+    {
+      "nome": "Teurgista Místico",
+      "descricao": "Até uma magia de cada círculo que você aprender poderá ser escolhida entre magias divinas (caso seja um conjurador arcano) ou entre magias arcanas (caso seja um conjurador divino).",
+      "requisito": "Devoto de Wynna, habilidade de classe Magias"
+    },
+    {
+      "nome": "Tradição de Lin-Wu",
+      "descricao": "Você considera a katana uma arma simples e, se for proficiente em armas marciais, recebe +1 na margem de ameaça com ela.",
+      "requisito": "Devoto de Lin-Wu"
+    },
+    {
+      "nome": "Transmissão da Loucura",
+      "descricao": "Você aprende e pode lançar Sussurros Insanos (CD Car). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
+      "requisito": "Devoto de Nimb"
+    },
+    {
+      "nome": "Tropas Duyshidakk",
+      "descricao": "Você pode gastar uma ação completa e 2 PM para invocar 1d4+1 goblinoides capangas em alcance curto. Eles podem se mover ou atacar conforme suas ordens e desaparecem ao morrer ou no fim da cena.",
+      "requisito": "Devoto de Thwor"
+    },
+    {
+      "nome": "Presas Primordiais",
+      "descricao": "Você pode gastar 1 PM para transformar seus dentes em uma arma natural de mordida até o fim da cena. Se já possuir mordida, o dano aumenta em dois passos.",
+      "requisito": "Devoto de Kallyadranoch ou Megalokk"
+    },
+    {
+      "nome": "Presas Venenosas",
+      "descricao": "Você pode gastar uma ação de movimento e 1 PM para envenenar uma arma corpo a corpo. Em caso de acerto, ela causa perda de 1d12 pontos de vida. O veneno dura até acertar um alvo ou até o fim da cena.",
+      "requisito": "Devoto de Sszzaas"
+    },
+    {
+      "nome": "Rejeição Divina",
+      "descricao": "Você recebe resistência a magia divina +5.",
+      "requisito": "Devoto de Aharadak"
+    },
+    {
+      "nome": "Reparar Injustiça",
+      "descricao": "Uma vez por rodada, quando um oponente em alcance curto acerta um ataque em você ou um aliado, você pode gastar 2 PM para obrigá-lo a repetir o ataque, usando o pior resultado.",
+      "requisito": "Devoto de Khalmyr"
+    },
+    {
+      "nome": "Sangue de Ferro",
+      "descricao": "Você pode pagar 3 PM para receber +2 nas rolagens de dano e redução de dano 5 até o fim da cena.",
+      "requisito": "Devoto de Arsenal"
+    },
+    {
+      "nome": "Sangue Ofídico",
+      "descricao": "Você recebe resistência a veneno +5 e a CD para resistir aos seus venenos aumenta em +2.",
+      "requisito": "Devoto de Sszzaas"
+    },
+    {
+      "nome": "Servos do Dragão",
+      "descricao": "Você pode gastar uma ação completa e 2 PM para invocar 2d4+1 kobolds capangas em alcance curto. Eles podem se mover ou atacar conforme suas ordens e desaparecem ao morrer ou no fim da cena.",
+      "requisito": "Devoto de Kallyadranoch"
+    },
+    {
+      "nome": "Urro Divino",
+      "descricao": "Quando faz um ataque ou lança uma magia, você pode pagar 1 PM para somar sua Constituição (mínimo +1) à rolagem de dano desse ataque ou magia.",
+      "requisito": "Devoto de Megalokk"
+    },
+    {
+      "nome": "Visão nas Trevas",
+      "descricao": "Você enxerga perfeitamente no escuro, incluindo em áreas afetadas por magias de escuridão.",
+      "requisito": "Devoto de Tenebra"
+    },
+    {
+      "nome": "Voz da Civilização",
+      "descricao": "Você está permanentemente sob o efeito da magia Compreensão.",
+      "requisito": "Devoto de Tanna-Toh"
+    },
+    {
+      "nome": "Voz da Natureza",
+      "descricao": "Você pode falar com animais (como o efeito da magia Voz Divina) e aprende e pode lançar Acalmar Animal, mas apenas contra animais. Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
+      "requisito": "Devoto de Allihanna"
+    },
+    {
+      "nome": "Voz dos Monstros",
+      "descricao": "Você conhece os idiomas de todos os monstros inteligentes e pode se comunicar livremente com monstros não inteligentes, como se estivesse sob efeito da magia Voz Divina.",
+      "requisito": "Devoto de Megalokk"
+    },
+    {
+      "nome": "Zumbificar",
+      "descricao": "Você pode gastar uma ação completa e 3 PM para reanimar o cadáver de uma criatura Pequena ou Média por um dia. O cadáver funciona como um parceiro iniciante (combatente, fortão ou guardião). Quando você sofre dano, pode sacrificá-lo para sofrer apenas metade do dano; o cadáver é destruído.",
+      "requisito": "Devoto de Tenebra"
+    }
+  ],
+  "poderes da tormenta": [
+    {
+      "nome": "Antenas",
+      "descricao": "Você recebe +1 em Iniciativa, Percepção e Vontade. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Anatomia Insana",
+      "descricao": "Você tem 25% de chance (resultado 1 em 1d4) de ignorar o dano adicional de um acerto crítico ou ataque furtivo. A chance aumenta em +25% para cada dois outros poderes da Tormenta que você possui.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Armamento Aberrante",
+      "descricao": "Você pode gastar uma ação de movimento e 1 PM para produzir uma versão orgânica de qualquer arma corpo a corpo ou de arremesso com a qual seja proficiente. O dano da arma aumenta em um passo para cada dois outros poderes da Tormenta que você possui. A arma dura pela cena e então se desfaz.",
+      "requisito": "Outro poder da Tormenta"
+    },
+    {
+      "nome": "Articulações Flexíveis",
+      "descricao": "Você recebe +1 em Acrobacia, Furtividade e Reflexos. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Asas Insetoides",
+      "descricao": "Você pode gastar 1 PM para receber deslocamento de voo 9m até o fim do seu turno. O deslocamento aumenta em +1,5m para cada outro poder da Tormenta que você possui.",
+      "requisito": "Quatro outros poderes da Tormenta"
+    },
+    {
+      "nome": "Carapaça",
+      "descricao": "Sua pele é recoberta por placas quitinosas. Você recebe +1 na Defesa. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Corpo Aberrante",
+      "descricao": "Crostas vermelhas em várias partes de seu corpo tornam seus ataques mais perigosos. Seu dano desarmado aumenta em um passo, mais um passo para cada quatro outros poderes da Tormenta que você possui.",
+      "requisito": "Outro poder da Tormenta"
+    },
+    {
+      "nome": "Cuspir Enxame",
+      "descricao": "Você pode gastar uma ação completa e 2 PM para criar um enxame de insetos rubros em alcance curto com duração sustentada. O enxame pode ser movido 9m com uma ação de movimento e causa 2d6 de dano de ácido às criaturas em seu espaço. Para cada dois outros poderes da Tormenta, você pode gastar +1 PM para aumentar o dano em +1d6.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Dentes Afiados",
+      "descricao": "Você recebe uma arma natural de mordida (1d4, crítico x2, corte). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque extra com a mordida.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Desprezar a Realidade",
+      "descricao": "Você pode gastar 2 PM para ficar no limiar da realidade até o início do seu próximo turno. Ignora terreno difícil e recebe 20% de chance de falha contra efeitos direcionados a você. Para cada dois outros poderes da Tormenta, essa chance aumenta em 5%, até o máximo de 50%.",
+      "requisito": "Quatro outros poderes da Tormenta"
+    },
+    {
+      "nome": "Empunhadura Rubra",
+      "descricao": "Você pode gastar 1 PM para cobrir suas mãos com uma carapaça rubra. Até o fim da cena recebe +1 em Luta. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Fome de Mana",
+      "descricao": "Quando passa em um teste de resistência contra uma habilidade mágica de um inimigo, recebe 1 PM temporário cumulativo. Você pode receber um máximo de PM temporários por cena igual ao número de poderes da Tormenta que possui.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Larva Explosiva",
+      "descricao": "Se uma criatura que sofreu dano de sua mordida nesta cena for reduzida a 0 PV ou menos, ela explode causando 4d4 de dano de ácido às criaturas adjacentes. O dano aumenta em +2d4 para cada dois outros poderes da Tormenta que você possui. Você é imune a esse dano.",
+      "requisito": "Dentes Afiados"
+    },
+    {
+      "nome": "Legião Aberrante",
+      "descricao": "Seu corpo se transforma em uma massa de insetos rubros. Você pode atravessar qualquer abertura por onde passe uma moeda (considerando terreno difícil) e recebe +1 em testes contra manobras de combate e testes de resistência contra efeitos que tenham apenas você como alvo. O bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
+      "requisito": "Anatomia Insana, três outros poderes da Tormenta"
+    },
+    {
+      "nome": "Mãos Membranosas",
+      "descricao": "Você recebe +1 em Atletismo, Fortitude e testes de agarrar. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Membros Estendidos",
+      "descricao": "Seus braços e armas naturais tornam-se grotescamente longos. Seu alcance natural para ataques corpo a corpo aumenta em +1,5m. Para cada quatro outros poderes da Tormenta que você possui, esse alcance aumenta em +1,5m.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Membros Extras",
+      "descricao": "Você possui duas patas insetoides como armas naturais (1d4, crítico x2, corte). Uma vez por rodada, ao usar a ação agredir, pode gastar 2 PM para fazer um ataque extra com cada uma delas. Se possuir Ambidestria ou Estilo de Duas Armas, pode empunhar armas leves nelas.",
+      "requisito": "Quatro outros poderes da Tormenta"
+    },
+    {
+      "nome": "Mente Aberrante",
+      "descricao": "Você recebe resistência a efeitos mentais +1. Sempre que fizer um teste de Vontade contra uma habilidade, a criatura que a utilizou sofre 1d6 de dano psíquico. O bônus de resistência e o dano aumentam em +1 e +1d6 respectivamente para cada dois outros poderes da Tormenta que você possui.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Olhos Vermelhos",
+      "descricao": "Você recebe visão no escuro e +1 em Intimidação. O bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Pele Corrompida",
+      "descricao": "Sua carne foi mesclada à matéria vermelha. Você recebe redução 2 contra ácido, eletricidade, fogo, frio, luz e trevas. A redução aumenta em +2 para cada dois outros poderes da Tormenta que você possui.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Sangue Ácido",
+      "descricao": "Quando sofre dano de um ataque corpo a corpo, o atacante sofre 1 ponto de dano de ácido para cada poder da Tormenta que você possui.",
+      "requisito": "Nenhum"
+    },
+    {
+      "nome": "Visco Rubro",
+      "descricao": "Você pode gastar 1 PM para expelir um líquido corrosivo. Até o fim da cena recebe +1 nas rolagens de dano corpo a corpo. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
+      "requisito": "Nenhum"
+    }
+  ],
+  "poderes de origem": [
+    {
+      "nome": "Membro da Igreja",
+      "descricao": "Você consegue hospedagem confortável e informação em qualquer templo de sua divindade, para você e seus aliados.",
+      "requisito": "Acólito"
+    },
+    {
+      "nome": "Amigo Especial",
+      "descricao": "Você recebe +5 em testes de Adestramento com animais. Além disso, possui um animal de estimação que o auxilia e o acompanha em suas aventuras. Em termos de jogo, é um parceiro que fornece +2 em uma perícia a sua escolha (exceto Luta ou Pontaria e aprovada pelo mestre) e não conta em seu limite de parceiros.",
+      "requisito": "Amigo dos Animais"
+    },
+    {
+      "nome": "Lembranças Graduais",
+      "descricao": "Durante suas aventuras, em determinados momentos a critério do mestre, você pode fazer um teste de Sabedoria (CD 10) para reconhecer pessoas, criaturas ou lugares que tenha encontrado antes de perder a memória.",
+      "requisito": "Amnésico"
+    },
+    {
+      "nome": "Sangue Azul",
+      "descricao": "Você tem alguma influência política, suficiente para ser tratado com mais leniência pela guarda, conseguir uma audiência com o nobre local etc.",
+      "requisito": "Aristocrata"
+    },
+    {
+      "nome": "Frutos do Trabalho",
+      "descricao": "No início de cada aventura, você recebe até 5 itens gerais que possa fabricar num valor total de até T$ 50. Esse valor aumenta para T$ 100 no patamar veterano, T$ 300 no campeão e T$ 500 no lenda.",
+      "requisito": "Artesão"
+    },
+    {
+      "nome": "Dom Artístico",
+      "descricao": "Você recebe +2 em testes de Atuação, e recebe o dobro de tibares em apresentações.",
+      "requisito": "Artista"
+    },
+    {
+      "nome": "Esse Cheiro...",
+      "descricao": "Você recebe +2 em Fortitude e detecta automaticamente a presença (mas não a localização ou natureza) de itens alquímicos em alcance curto.",
+      "requisito": "Assistente de Laboratório"
+    },
+    {
+      "nome": "À Prova de Tudo",
+      "descricao": "Você não sofre penalidade em deslocamento e Sobrevivência por clima ruim e por terreno difícil natural.",
+      "requisito": "Batedor"
+    },
+    {
+      "nome": "Confissão",
+      "descricao": "Você pode usar Intimidação para interrogar sem custo e em um minuto (veja Investigação).",
+      "requisito": "Capanga"
+    },
+    {
+      "nome": "Alpinista Social",
+      "descricao": "Você pode substituir testes de Diplomacia por testes de Enganação.",
+      "requisito": "Charlatão"
+    },
+    {
+      "nome": "Truque de Mágica",
+      "descricao": "Você pode lançar Explosão de Chamas, Hipnotismo e Queda Suave, mas apenas com o aprimoramento Truque. Esta não é uma habilidade mágica - os efeitos provêm de prestidigitação.",
+      "requisito": "Circense"
+    },
+    {
+      "nome": "Punguista",
+      "descricao": "Você pode fazer testes de Ladinagem para sustento (como a perícia Ofício), mas em apenas um dia. Se passar, recebe o dobro do dinheiro, mas, se falhar, pode ter problemas com a lei (a critério do mestre).",
+      "requisito": "Criminoso"
+    },
+    {
+      "nome": "Médico de Campo",
+      "descricao": "Você soma sua Sabedoria aos PV restaurados por suas habilidades e itens mundanos de cura.",
+      "requisito": "Curandeiro"
+    },
+    {
+      "nome": "Busca Interior",
+      "descricao": "Quando você e seus companheiros estão diante de um mistério, incapazes de prosseguir, você pode gastar 1 PM para meditar sozinho durante algum tempo e receber uma dica do mestre.",
+      "requisito": "Eremita"
+    },
+    {
+      "nome": "Desejo de Liberdade",
+      "descricao": "Ninguém voltará a torná-lo um escravo! Você recebe +5 em testes contra a manobra agarrar e efeitos de movimento.",
+      "requisito": "Escravo"
+    },
+    {
+      "nome": "Palpite Fundamentado",
+      "descricao": "Quando vai fazer um teste de perícia originalmente baseada em Inteligência ou Sabedoria, você pode gastar 2 PM para substituí-la por Conhecimento.",
+      "requisito": "Estudioso"
+    },
+    {
+      "nome": "Água no Feijão",
+      "descricao": "Você não sofre a penalidade de 5 e não gasta matéria-prima adicional para fabricar pratos para cinco pessoas.",
+      "requisito": "Fazendeiro"
+    },
+    {
+      "nome": "Cultura Exótica",
+      "descricao": "Por sua diferente visão de mundo, você encontra soluções inesperadas. Quando vai fazer um teste de perícia que requer treinamento, você pode gastar 1 PM para ignorar esse requerimento para esse teste.",
+      "requisito": "Forasteiro"
+    },
+    {
+      "nome": "Pão e Circo",
+      "descricao": "Por seu treino em combates de exibição, você sabe \"bater sem machucar\". Pode escolher causar dano não letal sem sofrer a penalidade de -5.",
+      "requisito": "Gladiador"
+    },
+    {
+      "nome": "Detetive",
+      "descricao": "Você pode gastar 1 PM para substituir testes de Percepção e Intuição por testes de Investigação até o fim da cena.",
+      "requisito": "Guarda"
+    },
+    {
+      "nome": "Herança",
+      "descricao": "Você herdou um item de preço de até T$ 1.000. Você pode escolher este poder duas vezes, para um item de até T$ 2.000.",
+      "requisito": "Herdeiro"
+    },
+    {
+      "nome": "Coração Heroico",
+      "descricao": "Você recebe +3 pontos de mana. Quando atinge um novo patamar (no 5º, 11º e 17º níveis), recebe +3 PM.",
+      "requisito": "Herói Camponês"
+    },
+    {
+      "nome": "Passagem de Navio",
+      "descricao": "Você consegue transporte marítimo para você e seus aliados, sem custos, desde que todos paguem com trabalho (passar em pelo menos um teste de perícia adequado durante a viagem).",
+      "requisito": "Marujo"
+    },
+    {
+      "nome": "Vendedor de Carcaças",
+      "descricao": "Você pode extrair recursos de criaturas em um minuto, em vez de uma hora, e recebe +5 no teste.",
+      "requisito": "Mateiro"
+    },
+    {
+      "nome": "Rede de Contatos",
+      "descricao": "Graças à influência de sua guilda, você pode usar Diplomacia para interrogar sem custo e em um minuto (veja Investigação).",
+      "requisito": "Membro de Guilda"
+    },
+    {
+      "nome": "Negociação",
+      "descricao": "Você pode vender itens 10% mais caro (não cumulativo com barganha).",
+      "requisito": "Mercador"
+    },
+    {
+      "nome": "Escavador",
+      "descricao": "Você se torna proficiente em picaretas, causa +1 de dano com elas e não é afetado por terreno dificil em masmorras e subterrâneos.",
+      "requisito": "Minerador"
+    },
+    {
+      "nome": "Mochileiro",
+      "descricao": "Seu limite de carga aumenta em 5 espaços.",
+      "requisito": "Nômade"
+    },
+    {
+      "nome": "Quebra-Galho",
+      "descricao": "Em cidades ou metrópoles, você pode comprar qualquer item mundano não superior por metade do preço normal. Esses itens não podem ser matérias-primas e não podem ser revendidos (são velhos, sujos, furtados...).",
+      "requisito": "Pivete"
+    },
+    {
+      "nome": "Estoico",
+      "descricao": "Sua condição de descanso é uma categoria acima do padrão pela situação (normal em condições ruins, confortável em condições normais e luxuosa em condições confortáveis ou melhores). Veja as regras de recuperação na página 106.",
+      "requisito": "Refugiado"
+    },
+    {
+      "nome": "Antigo Mestre",
+      "descricao": "Você ainda mantém contato com o herói que costumava servir. Uma vez por aventura, ele surge para ajudá-lo por uma cena. Ele é um parceiro mestre de um tipo a sua escolha (definido ao obter este poder) que não conta em seu limite de aliados.",
+      "requisito": "Seguidor"
+    },
+    {
+      "nome": "Vida Rústica",
+      "descricao": "Você come coisas que fariam um avestruz vomitar (sendo imune a efeitos prejudiciais de itens ingeríveis) e também consegue descansar nos lugares mais desconfortáveis (mesmo dormindo ao relento, sua recuperação de PV e PM nunca é inferior a seu próprio nível).",
+      "requisito": "Selvagem"
+    },
+    {
+      "nome": "Influência Militar",
+      "descricao": "Você fez amigos nas forças armadas. Onde houver acampamentos ou bases militares, você pode conseguir hospedagem e informações para você e seus aliados.",
+      "requisito": "Soldado"
+    },
+    {
+      "nome": "Gororoba",
+      "descricao": "Você não sofre a penalidade de –5 para fabricar um prato especial adiconal.",
+      "requisito": "Taverneiro"
+    },
+    {
+      "nome": "Esforçado",
+      "descricao": "Você não teme trabalho duro, nem prazos apertados. Você recebe um bônus de +2 em todos os testes de perícias estendidos (incluindo perigos complexos).",
+      "requisito": "Trabalhador"
+    }
+  ]
+}
