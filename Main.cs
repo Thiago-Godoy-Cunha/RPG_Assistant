@@ -1,6 +1,7 @@
 ﻿using RPG_Assistant.Enums;
 using RPG_Assistant.Models;
 using System;
+using System.Text;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
@@ -16,6 +17,8 @@ public class ClassesRoot {
 public class Program
 {
     static async Task Main(string[] args) {
+        OriginType _selectedOrigin = GetOriginFromUser();
+
         ClassType _selectedClass = GetClassFromUser();
         string _inputName = GetNameFromUser();
 
@@ -55,39 +58,47 @@ public class Program
             return _inputName;
         }
     }
-    public static ClassType GetClassFromUser() {
-        ClassType _selectedClass = (ClassType)new Random().Next(1, 15);
+    /// <summary>
+    /// Pede ao usuário para escolher um valor de um enum, exibindo as opções numeradas.
+    /// Aceita o número da opção, o nome do valor (case-insensitive) ou "0" para um valor aleatório.
+    /// </summary>
+    /// <param name="question">Pergunta exibida acima da lista de opções.</param>
+    /// <param name="formatDisplay">Formatação opcional aplicada ao nome de cada valor ao exibir (ex.: SplitPascalCase).</param>
+    public static T GetEnumFromUser<T>(string question, Func<string, string> formatDisplay = null) where T : struct, Enum {
+        T[] _values = (T[])Enum.GetValues(typeof(T));
+        formatDisplay ??= (name => name);
+
+        T _selected = _values[new Random().Next(_values.Length)];
+
         while (true) {
             Console.Clear();
-            Console.WriteLine("Qual é a sua classe?");
-            foreach (ClassType classe in Enum.GetValues(typeof(ClassType))) {
-                Console.WriteLine(((int)classe + 1) + " - " + classe.ToString());
+            Console.WriteLine(question);
+            for (int i = 0; i < _values.Length; i++) {
+                Console.WriteLine((i + 1) + " - " + formatDisplay(_values[i].ToString()));
             }
             Console.WriteLine("0 - Escolher aleatório");
 
-            string _inputClass = Console.ReadLine();
+            string _input = Console.ReadLine();
 
-            if (string.IsNullOrWhiteSpace(_inputClass)) {
+            if (string.IsNullOrWhiteSpace(_input)) {
                 Console.WriteLine("Escolha uma opção válida");
                 continue;
             }
 
-            if (_inputClass == "0") {
+            if (_input == "0") {
                 break;
             }
 
-            if (int.TryParse(_inputClass, out int parsed)) {
-                var values = Enum.GetValues(typeof(ClassType));
-                int count = values.Length;
-                if (parsed >= 1 && parsed <= count) {
-                    _selectedClass = (ClassType)(parsed - 1);
+            if (int.TryParse(_input, out int parsed)) {
+                if (parsed >= 1 && parsed <= _values.Length) {
+                    _selected = _values[parsed - 1];
                     break;
                 }
             } else {
                 bool matched = false;
-                foreach (ClassType classe in Enum.GetValues(typeof(ClassType))) {
-                    if (string.Equals(_inputClass, classe.ToString(), StringComparison.OrdinalIgnoreCase)) {
-                        _selectedClass = Enum.Parse<ClassType>(classe.ToString());
+                foreach (T value in _values) {
+                    if (string.Equals(_input, value.ToString(), StringComparison.OrdinalIgnoreCase)) {
+                        _selected = value;
                         matched = true;
                         break;
                     }
@@ -98,8 +109,12 @@ public class Program
 
             Console.WriteLine("Escolha uma opção válida");
         }
-        return _selectedClass;
+
+        return _selected;
     }
+    public static ClassType GetClassFromUser() => GetEnumFromUser<ClassType>("Qual é a sua classe?");
+    public static OriginType GetOriginFromUser() => GetEnumFromUser<OriginType>("Qual é a sua origem?", SplitPascalCase);
+
     public static void TrainObrigatoryExpertises(Character character) {
         List<string>[] expertisesList = character.InitialClass.GetClassExpertises();
         Console.Clear();
@@ -296,5 +311,20 @@ public class Program
             4 => 7,
             _ => throw new ArgumentOutOfRangeException(nameof(value), "Valor fora do intervalo esperado")
         };
+    }
+
+    private static string SplitPascalCase(string input) {
+        if (string.IsNullOrEmpty(input)) return input;
+        var sb = new StringBuilder();
+        sb.Append(input[0]);
+        for (int i = 1; i < input.Length; i++) {
+            char c = input[i];
+            char prev = input[i - 1];
+            if (char.IsUpper(c) && !char.IsWhiteSpace(prev)) {
+                sb.Append(' ');
+            }
+            sb.Append(c);
+        }
+        return sb.ToString();
     }
 }
