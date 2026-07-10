@@ -1,7 +1,9 @@
-﻿using RPG_Assistant.Enums;
-using System.Text.Json;
+﻿using RPG_Assistant.Config;
+using RPG_Assistant.Enums;
+using RPG_Assistant.Loading;
 using System;
 using System.IO;
+using System.Text.Json;
 
 namespace RPG_Assistant.Models;
 
@@ -12,31 +14,22 @@ public class Origin {
     private string[] _benefits;
 
     public Origin(OriginType name) {
+        var raw = OriginDataLoader.GetRaw(name);
         _name = name;
+        _description = raw.GetProperty("descricao").GetString();
 
-        string jsonString = File.ReadAllText("C:\\Users\\thiag\\source\\repos\\Thiago-Godoy-Cunha\\RPG_Assistant\\origens.json");
-        using JsonDocument doc = JsonDocument.Parse(jsonString);
-        JsonElement listaOrigens = doc.RootElement.GetProperty("origens");
-
-        foreach (JsonElement origem in listaOrigens.EnumerateArray()) {
-            string nomeNoJson = origem.GetProperty("nome").GetString();
-            string nomeFormatado = nomeNoJson?.Replace(" ", "");
-
-            if (nomeFormatado != null && nomeFormatado.Equals(name.ToString(), StringComparison.OrdinalIgnoreCase)) {
-                _description = origem.GetProperty("descricao").GetString();
-                if (origem.GetProperty("nome").GetString() == "Amnesico") {
-                    _items.Append(origem.GetProperty("itens").GetString());
-                } else {
-                    foreach (string item in origem.GetProperty("itens").GetString().Split(',')) {
-                        _items.Append(item.Trim());
-                    }
-                }
-                string beneficiosString = origem.GetProperty("beneficios").GetString().Replace(';',',');
-                foreach (string beneficio in beneficiosString.Split(',')) {
-                    _benefits.Append(beneficio.Trim());
-                    break;
-                }
+        if (raw.GetProperty("nome").GetString() == "Amnesico") {
+            _items.Append(raw.GetProperty("itens").GetString());
+        } else {
+            foreach (string item in raw.GetProperty("itens").GetString().Split(',')) {
+                _items.Append(item.Trim());
             }
+        }
+
+        string beneficiosString = raw.GetProperty("beneficios").GetString().Replace(';',',');
+        foreach (string beneficio in beneficiosString.Split(',')) {
+            _benefits.Append(beneficio.Trim());
+            break;
         }
     }
 
@@ -50,13 +43,11 @@ public class Origin {
         set => _description = value;
     }
 
-    public string Items {
+    public string[] Items {
         get => _items;
-        set => _items = value;
     }
 
-    public string Benefits {
+    public string[] Benefits {
         get => _benefits;
-        set => _benefits = value;
     }
 }
