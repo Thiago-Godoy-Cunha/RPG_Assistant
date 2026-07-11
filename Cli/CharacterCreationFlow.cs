@@ -13,7 +13,7 @@ public static class CharacterCreationFlow {
 
         string name = NamePrompt.GetName();
 
-        Character character = new Character(name, selectedClass);
+        Character character = new Character(name, selectedClass, selectedOrigin);
 
         ExpertiseTrainingFlow.TrainObrigatoryExpertises(character);
         ExpertiseTrainingFlow.TrainOptionalExpertises(character);

@@ -15,18 +15,21 @@ public class Character {
     private List<ExpertiseType> _trainedExpertises = new();
     private readonly Dictionary<Class, byte> _classLevels = new();
     private readonly Class _initialClass;
+    private readonly Origin _origin;
     private readonly List<Power> _chosenPowers = new();
     private readonly List<Spell> _learnedSpells = new(); 
     public string Name => _name;
     public byte TotalLevel => (byte)_classLevels.Values.Sum(lvl => (int)lvl);
 
-    public Character(string name, ClassType firstClass) {
+    public Character(string name, ClassType firstClass, OriginType origin) {
         Class classe = new Class(firstClass);
+        Origin origem = new Origin(origin);
         _name = name;
         _classLevels.Add(classe, 1);
         _initialClass = classe;
         _currentHealth = classe.InitialHp;
         _currentMana = classe.ManaPerLevel;
+        _origin = origem;
     }
 
     public string ToString() {
