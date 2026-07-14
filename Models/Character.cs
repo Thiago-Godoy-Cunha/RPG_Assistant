@@ -32,6 +32,7 @@ public class Character {
         _currentHealth = classe.InitialHp;
         _currentMana = classe.ManaPerLevel;
         _origin = origem;
+        _race = raca;
     }
 
     public string ToString() {
