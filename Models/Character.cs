@@ -16,14 +16,16 @@ public class Character {
     private readonly Dictionary<Class, byte> _classLevels = new();
     private readonly Class _initialClass;
     private readonly Origin _origin;
+    private readonly Race _race;
     private readonly List<Power> _chosenPowers = new();
     private readonly List<Spell> _learnedSpells = new(); 
     public string Name => _name;
     public byte TotalLevel => (byte)_classLevels.Values.Sum(lvl => (int)lvl);
 
-    public Character(string name, ClassType firstClass, OriginType origin) {
+    public Character(string name, ClassType firstClass, OriginType origin, RaceType race) {
         Class classe = new Class(firstClass);
         Origin origem = new Origin(origin);
+        Race raca = new Race(race);
         _name = name;
         _classLevels.Add(classe, 1);
         _initialClass = classe;
@@ -33,7 +35,7 @@ public class Character {
     }
 
     public string ToString() {
-        return $"{_name} é um {_initialClass.Name} de nível {TotalLevel}\nVida: {CurrentHealth}\nMana: {CurrentMana}";
+        return $"{_name} é um {_race.Name} {_initialClass.Name} de nível {TotalLevel}\nVida: {CurrentHealth}\nMana: {CurrentMana}";
     }
 
     //public short MaxHealth {

@@ -6,14 +6,13 @@ namespace RPG_Assistant.Cli;
 
 public static class CharacterCreationFlow {
     public static void Run() {
+        string name = NamePrompt.GetName();
+        ClassType selectedClass = EnumPrompt.Choose<ClassType>("Qual é a sua classe?");
+        RaceType selectedRace = EnumPrompt.Choose<RaceType>("Qual sua raça?");
         OriginType selectedOrigin = EnumPrompt.Choose<OriginType>(
             "Qual é a sua origem?", StringExtensions.SplitPascalCase);
 
-        ClassType selectedClass = EnumPrompt.Choose<ClassType>("Qual é a sua classe?");
-
-        string name = NamePrompt.GetName();
-
-        Character character = new Character(name, selectedClass, selectedOrigin);
+        Character character = new Character(name, selectedClass, selectedOrigin, selectedRace);
 
         ExpertiseTrainingFlow.TrainObrigatoryExpertises(character);
         ExpertiseTrainingFlow.TrainOptionalExpertises(character);

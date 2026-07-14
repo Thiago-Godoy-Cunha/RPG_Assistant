@@ -7,7 +7,7 @@
       "beneficios": "Cura, Religião, Vontade (perícias); Medicina, Membro da Igreja, Vontade de Ferro (poderes)."
     },
     {
-      "nome": "Amigo dos Animais",
+      "nome": "Amigo Dos Animais",
       "descricao": "Você pode ter sido cavalariço no estábulo de um castelo, criador de gado em uma fazenda, ginete de Namalkah ou mesmo tratador em um zoológico ou circo em Arton, existem espetáculos circenses com animais em jaulas, que talvez você tenha desejado libertar. Ou então nada disso: desde criança você tem facilidade em lidar com animais, sempre conversou com eles, sentiu ser capaz de compreendê-los. Em certos lugares ou tribos, alguma montaria especial seria destinada a você.",
       "itens": "Cão de caça, cavalo, pônei ou trobo (escolha um).",
       "beneficios": "Adestramento, Cavalgar (perícias); Amigo Especial (poder)."
@@ -37,7 +37,7 @@
       "beneficios": "Atuação, Enganação (perícias); Atraente, Dom Artístico, Sortudo, Torcida (poderes)."
     },
     {
-      "nome": "Assistente de Laboratorio",
+      "nome": "Assistente De Laboratorio",
       "descricao": "Você atuou como ajudante para um alquimista, inventor ou mago. Costumava tomar notas, limpar o laboratório, arrumar as ferramentas, vasculhar mercados em busca de ingredientes exóticos, recapturar a aberração antinatural que fugiu da jaula... enfim, não era o trabalho mais fácil, limpo ou seguro do mundo. Exposição prolongada a substâncias e experimentos perigosos talvez tenham prejudicado sua saúde (ou despertado suas habilidades de classe...).",
       "itens": "Instrumentos de Ofício (alquimista).",
       "beneficios": "Ofício (alquimista), Misticismo (perícias); Esse Cheiro..., Venefício, um poder da Tormenta a sua escolha (poderes)."
@@ -145,7 +145,7 @@
       "beneficios": "Atletismo, Furtividade, Sobrevivência (perícias); Lobo Solitário, Sentidos Aguçados, Vendedor de Carcaças (poderes)."
     },
     {
-      "nome": "Membro de Guilda",
+      "nome": "Membro De Guilda",
       "descricao": "Você foi, ou ainda é, membro atuante em uma grande guilda uma associação de artesãos, mercadores, magos, criminosos ou mesmo aventureiros. A guilda forneceu o treinamento e equipamento necessários para suas atividades, esperando que você seja útil em troca. Você se manteve fiel a seus patronos, cumprindo missões e colhendo os benefícios de pertencer a uma vasta organização? Ou deixou essa vida para trás, sendo agora desprezado ou até caçado por seus antigos mestres?",
       "itens": "Gazua ou instrumentos de oficio.",
       "beneficios": "Diplomacia, Enganação, Misticismo, Ofício (perícias); Foco em Perícia, Rede de Contatos (poderes)."
