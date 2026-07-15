@@ -29,13 +29,14 @@ public static class ExpertiseTrainingFlow {
         List<string> optionalRaw = expertisesList[1];
         byte qtdOptExpertises = ExpertiseDataLoader.GetQtdOptExpertises(character.InitialClass.Name);
 
-        var options = ExpertiseRules.GetOptionalExpertiseOptions(optionalRaw);
+        var allOptions = ExpertiseRules.GetOptionalExpertiseOptions(optionalRaw);
+        var availableOptions = SelectionGuard.ExcludeAlreadyChosen(allOptions, character.TrainedExpertises);
 
         Console.Clear();
         Console.WriteLine(character.ToString());
 
         List<ExpertiseType> chosen = MultiSelectPrompt.Choose(
-            $"\nEscolha {qtdOptExpertises} perícias opcionais:", options, qtdOptExpertises);
+            $"\nEscolha {qtdOptExpertises} perícias opcionais:", availableOptions, qtdOptExpertises);
 
         foreach (var expertise in chosen)
             character.TrainExpertise(expertise);

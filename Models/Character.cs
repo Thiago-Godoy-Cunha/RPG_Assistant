@@ -72,8 +72,11 @@ public class Character {
 
     public List<ExpertiseType> TrainedExpertises => _trainedExpertises;
     public Dictionary<AttributeType, sbyte> Attributes  => _attributes;
-
-    public void TrainExpertise(ExpertiseType type) => _trainedExpertises.Add(type); 
+    public void TrainExpertise(ExpertiseType type) {
+        if (_trainedExpertises.Contains(type))
+            throw new InvalidOperationException($"Perícia '{type}' já está treinada.");
+        _trainedExpertises.Add(type);
+    }
     public void UntrainExpertise(ExpertiseType type) => _trainedExpertises.Remove(type);
     public bool IsTrained(ExpertiseType type) => _trainedExpertises.Contains(type);
     public int GetExpertiseModifier(ExpertiseType expertise) {
@@ -116,8 +119,12 @@ public class Character {
     //    return true;
     //}
     public void LearnPower(Power power) {
+        if (_chosenPowers.Contains(power))
+            return;
+
         if (!CanLearnPower(power))
             throw new InvalidOperationException($"O personagem não cumpre os requisitos para aprender o poder: {power.Name}.");
+
         _chosenPowers.Add(power);
     }
 
