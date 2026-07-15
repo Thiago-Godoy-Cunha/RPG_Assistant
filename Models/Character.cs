@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using RPG_Assistant.Enums;
+﻿using RPG_Assistant.Enums;
 using RPG_Assistant.Extensions;
 namespace RPG_Assistant.Models;
 public class Character {
-    private string _name;
+    private readonly string _name;
     private short _currentHealth;
     private short _currentMana;
+    //private byte _baseDef;
     private byte _def;
     private byte _desloc;
     private Dictionary<AttributeType, sbyte> _attributes = new();
@@ -22,7 +19,7 @@ public class Character {
     public string Name => _name;
     public byte TotalLevel => (byte)_classLevels.Values.Sum(lvl => (int)lvl);
 
-    public Character(string name, ClassType firstClass, OriginType origin, RaceType race) {
+    public Character(string name, ClassType firstClass, OriginType origin, RaceType race, Dictionary<AttributeType, sbyte> attributes) {
         Class classe = new Class(firstClass);
         Origin origem = new Origin(origin);
         Race raca = new Race(race);
@@ -33,9 +30,11 @@ public class Character {
         _currentMana = classe.ManaPerLevel;
         _origin = origem;
         _race = raca;
+        _attributes = attributes;
+        //_baseDef = attributes.TryGetValue(AttributeType.Destreza, out sbyte des) ? (byte)(10 + des) : (byte)10;
     }
 
-    public string ToString() {
+    public override string ToString() {
         return $"{_name} é um {_race.Name} {_initialClass.Name} de nível {TotalLevel}\nVida: {CurrentHealth}\nMana: {CurrentMana}";
     }
 
@@ -78,6 +77,9 @@ public class Character {
 
     public List<ExpertiseType> TrainedExpertises => _trainedExpertises;
     public Dictionary<AttributeType, sbyte> Attributes  => _attributes;
+
+    public Origin Origin => _origin;
+
     public void TrainExpertise(ExpertiseType type) {
         if (_trainedExpertises.Contains(type))
             throw new InvalidOperationException($"Perícia '{type}' já está treinada.");

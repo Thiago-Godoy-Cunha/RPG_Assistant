@@ -6,13 +6,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="RPGEngine.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Google.GenAI" Version="1.12.0" />
-  </ItemGroup>
-
 </Project>
