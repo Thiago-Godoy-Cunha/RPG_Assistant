@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using System.Text;
 
 namespace RPG_Assistant.Loading;
 
@@ -15,7 +16,7 @@ public static class JsonDataLoader {
         var result = doc.RootElement.GetProperty(rootProperty)
             .EnumerateArray()
             .ToDictionary(
-                item => item.GetProperty("nome").GetString()!,
+                item => item.GetProperty("nome").GetString()!.Replace(" ",""),
                 item => item.Clone());
 
         _cache[filePath] = result;

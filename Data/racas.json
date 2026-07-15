@@ -1,0 +1,89 @@
+{
+  "racas": [
+    {
+      "nome": "Humano",
+      "atributos": "+1 em 3 atributos diferentes",
+      "habilidades": "Versatil"
+    },
+    {
+      "nome": "Anao",
+      "atributos": "Constituicao +2, Sabedoria +1, Destreza -1",
+      "habilidades": "Conhecimento das Rochas, Devagar e Sempre, Duro como Pedra, Tradicao de Heredrimm"
+    },
+    {
+      "nome": "Dahllan",
+      "atributos": "Sabedoria +2, Destreza +1, Inteligencia -1",
+      "habilidades": "Amiga das Plantas, Armadura de Allihanna, Empatia Selvagem"
+    },
+    {
+      "nome": "Elfo",
+      "atributos": "Inteligencia +2, Destreza +1, Constituicao -1",
+      "habilidades": "Graca de Glorienn, Sangue Magico, Sentidos Elficos"
+    },
+    {
+      "nome": "Goblin",
+      "atributos": "Destreza +2, Inteligencia +1, Carisma -1",
+      "habilidades": "Engenhoso, Espelunqueiro, Peste Esguia, Rato das Ruas"
+    },
+    {
+      "nome": "Lefou",
+      "atributos": "+1 em 3 atributos diferentes (exceto Carisma), Carisma -1",
+      "habilidades": "Cria da Tormenta, Deformidade"
+    },
+    {
+      "nome": "Minotauro",
+      "atributos": "Forca +2, Constituicao +1, Sabedoria -1",
+      "habilidades": "Chifres, Couro Rigido, Faro, Medo de Altura"
+    },
+    {
+      "nome": "Qareen",
+      "atributos": "Carisma +2, Inteligencia +1, Sabedoria -1",
+      "habilidades": "Desejos, Resistencia Elemental, Tatuagem Mistica"
+    },
+    {
+      "nome": "Golem",
+      "atributos": "Forca +2, Constituicao +1, Carisma -1",
+      "habilidades": "Chassi, Criatura Artificial, Fonte Elemental, Proposito de Criacao"
+    },
+    {
+      "nome": "Hynne",
+      "atributos": "Destreza +2, Carisma +1, Forca -1",
+      "habilidades": "Arremessador, Pequeno e Rechonchudo, Sorte Salvadora"
+    },
+    {
+      "nome": "Kliren",
+      "atributos": "Inteligencia +2, Carisma +1, Forca -1",
+      "habilidades": "Hibrido, Engenhosidade, Ossos Frageis, Vanguardista"
+    },
+    {
+      "nome": "Medusa",
+      "atributos": "Destreza +2, Carisma +1",
+      "habilidades": "Cria de Megalokk, Natureza Venenosa, Olhar Atordoante"
+    },
+    {
+      "nome": "Osteon",
+      "atributos": "+1 em 3 atributos diferentes (exceto Constituicao), Constituicao -1",
+      "habilidades": "Armadura Ossea, Memoria Postuma, Natureza Esqueletica, Preco da Nao Vida"
+    },
+    {
+      "nome": "SereiaTritao",
+      "atributos": "+1 em 3 atributos diferentes",
+      "habilidades": "Cancao dos Mares, Mestre do Tridente, Transformacao Anfibia"
+    },
+    {
+      "nome": "Silfide",
+      "atributos": "Carisma +2, Destreza +1, Forca -2",
+      "habilidades": "Asas de Borboleta, Espirito da Natureza, Magia das Fadas"
+    },
+    {
+      "nome": "Suraggel",
+      "atributos": "Sabedoria +2, Carisma +1 (Aggelus); Destreza +2, Inteligencia +1 (Sulfure)",
+      "habilidades": "Heranca Divina, Luz Sagrada (Aggelus), Sombras Profanas (Sulfure)"
+    },
+    {
+      "nome": "Trog",
+      "atributos": "Constituicao +2, Forca +1, Inteligencia -1",
+      "habilidades": "Mau Cheiro, Mordida, Reptiliano, Sangue Frio"
+    }
+  ]
+}
