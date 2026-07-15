@@ -112,18 +112,6 @@ public class Character {
         }
         return true;
     }
-    //public bool CanLearnSpell(Class casterClass, Spell spell) {
-    //    if (casterClass.SpellCircleProgression == null) return false;
-    //    if (!_classLevels.TryGetValue(casterClass, out byte classLevel)) return false;
-    //    if (!casterClass.SpellCircleProgression.TryGetValue(classLevel, out SpellCircle maxCircle)) {
-    //        return false;
-    //    }
-    //    return spell.Circle <= maxCircle;
-    //    foreach (Spell learned in _learnedSpells) {
-    //        if (learned.Name == spell.Name) return false;
-    //    }
-    //    return true;
-    //}
     public void LearnPower(Power power) {
         if (_chosenPowers.Contains(power))
             return;
@@ -135,22 +123,4 @@ public class Character {
     }
 
     public void SetAttributes(Dictionary<AttributeType, sbyte> attributes) => _attributes = attributes;
-
-    //public void LearnSpell(Class casterClass, Spell spell) {
-    //    if (!CanLearnSpell(casterClass, spell))
-    //        throw new InvalidOperationException($"O personagem não tem acesso ao {spell.Circle}° círculo para aprender: {spell.Name}.");
-    //    _learnedSpells.Add(spell);
-    //}
-    //public List<Skill> GetAllActiveSkills() {
-    //    var allSkills = new List<Skill>();
-    //    foreach(var (classes, level) in _classLevels) {
-    //        foreach (var (levelUnlocked, skills) in classes.AutomaticProgressionTable) {
-    //            if (TotalLevel >= levelUnlocked) {
-    //                allSkills.AddRange(skills);
-    //            }
-    //        }
-    //    }
-    //    allSkills.AddRange(_chosenPowers);
-    //    return allSkills;
-    //}
 }
