@@ -6,5 +6,6 @@ public static class DataPaths {
     public static string Origins => Path.Combine(Root, "origens.json");
     public static string Powers => Path.Combine(Root, "poderes.json");
     public static string Skills => Path.Combine(Root, "habilidades.json");
-    public static string Racas => Path.Combine(Root, "racas.json");
+    public static string Races => Path.Combine(Root, "racas.json");
+    public static string Items => Path.Combine(Root, "itens.json");
 }

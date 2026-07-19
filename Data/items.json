@@ -1,0 +1,20 @@
+﻿{
+  "itens": [
+    {
+      "armas": [
+        {
+          "nome": "Arco Curto",
+          "tipo": "Arma",
+          "descricao": "Uma arma antiga e comum, este arco é usado primariamente como ferramenta de caça, embora seja usado como arma de guerra por milícias, bandidos e exércitos menos equipados. Pode ser usado montado.",
+          "preco": 30,
+          "dano": [ 1, 6 ],
+          "margem de ameaca": 20,
+          "multiplicador de critico": 3,
+          "alcance": "Medio",
+          "tipo de dano": "Perfuracao",
+          "espacos": 2
+        }
+      ]
+    }
+  ]
+}

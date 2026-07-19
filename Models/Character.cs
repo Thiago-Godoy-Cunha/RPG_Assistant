@@ -26,46 +26,48 @@ public class Character {
         _name = name;
         _classLevels.Add(classe, 1);
         _initialClass = classe;
-        _currentHealth = classe.InitialHp;
-        _currentMana = classe.ManaPerLevel;
         _origin = origem;
         _race = raca;
         _attributes = attributes;
+        _desloc = raca.Desloc;
+        _currentHealth = MaxHealth;
+        _currentMana = MaxMana;
         //_baseDef = attributes.TryGetValue(AttributeType.Destreza, out sbyte des) ? (byte)(10 + des) : (byte)10;
     }
 
     public override string ToString() {
-        return $"{_name} é um {_race.Name} {_initialClass.Name} de nível {TotalLevel}\nVida: {CurrentHealth}\nMana: {CurrentMana}";
+        return $"{_name} é um {_race.Name} {_initialClass.Name} de nível {TotalLevel}\nVida: {CurrentHealth}\nMana: {CurrentMana}\nVida máxima: {MaxHealth}\nMana máxima: {MaxMana}\nDeslocamento: {Desloc}";
     }
 
-    //public short MaxHealth {
-    //    get {
-    //        int constitutionMod = _attributes[AttributeType.Constitution];
-    //        int totalLevel = TotalLevel;
-    //        int baseHp = _initialClass.InitialHp;
+    public short MaxHealth {
+        get {
+            int constitutionMod = _attributes[AttributeType.Constituicao];
+            int totalLevel = TotalLevel;
+            int baseHp = _initialClass.InitialHp;
 
-    //        foreach (var (classes, level) in _classLevels) {
-    //            if (classes == _initialClass) {
-    //                baseHp += classes.HpPerLevel * (level - 1);
-    //            }
-    //            else {
-    //                baseHp += classes.HpPerLevel * level;
-    //            }
-    //        }
+            foreach (var (classes, level) in _classLevels) {
+                if (classes == _initialClass) {
+                    baseHp += classes.HpPerLevel * (level - 1);
+                } else {
+                    baseHp += classes.HpPerLevel * level;
+                }
+            }
 
-    //        int constitutionBonus = constitutionMod * totalLevel;
-    //        return (short)(baseHp + constitutionBonus);
-    //    }
-    //}
-    //public short MaxMana {
-    //    get {
-    //        int totalMana = 0;
-    //        foreach (var (classes, level) in _classLevels) {
-    //            totalMana += classes.ManaPerLevel * level;
-    //        }
-    //        return (short)totalMana;
-    //    }
-    //}
+            int constitutionBonus = constitutionMod * totalLevel;
+            return (short)(baseHp + constitutionBonus);
+        }
+    }
+
+    public short MaxMana {
+        get {
+            int totalMana = 0;
+            foreach (var (classes, level) in _classLevels) {
+                totalMana += classes.ManaPerLevel * level;
+            }
+            return (short)totalMana;
+        }
+    }
+
     public byte Def { get => _def; set => _def = value; }
     public byte Desloc { get => _desloc; set => _desloc = value; }
     public short CurrentHealth { get => _currentHealth; set => _currentHealth = value; }
