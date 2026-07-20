@@ -95,6 +95,9 @@ public class Character {
 
     public Origin Origin => _origin;
 
+    public Shield? Shield { get => _shield; }
+    public Armor? Armor { get => _armor; }
+
     public void TrainExpertise(ExpertiseType type) {
         if (_trainedExpertises.Contains(type))
             throw new InvalidOperationException($"Perícia '{type}' já está treinada.");
