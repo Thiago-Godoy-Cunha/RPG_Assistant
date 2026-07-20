@@ -1,0 +1,51 @@
+﻿{
+  "itens": [
+    {
+      "armas": [
+        {
+          "nome": "Arco Curto",
+          "tipo": "Arma",
+          "descricao": "Uma arma antiga e comum, este arco é usado primariamente como ferramenta de caça, embora seja usado como arma de guerra por milícias, bandidos e exércitos menos equipados. Pode ser usado montado.",
+          "preco": 30,
+          "dano": [ 1, 6 ],
+          "margem de ameaca": 20,
+          "multiplicador de critico": 3,
+          "alcance": "Medio",
+          "tipo de dano": "Perfuracao",
+          "espacos": 2
+        }
+      ],
+      "armaduras": [
+        {
+          "nome": "Armadura Acolchoada",
+          "tipo": "Armadura",
+          "descricao": "Uma túnica almofadada feita em linho ou lã. É a armadura mais leve, mas protege todo o corpo, fornecendo +2 em Fortitude.",
+          "preco": 5,
+          "defesa bonus": 1,
+          "penalidade": 0,
+          "espacos": 2
+        }
+      ],
+      "escudos": [
+        {
+          "nome": "Escudo Leve",
+          "tipo": "Escudo",
+          "descricao": "Tipicamente feito de madeira, este escudo é amarrado no antebraço, deixando a mão livre. Você pode carregar um objeto na mão que empunha o escudo, mas não manusear uma arma.",
+          "preco": 5,
+          "defesa bonus": 1,
+          "penalidade": -1,
+          "espacos": 1
+        },
+        {
+          "nome": "Escudo Pesado",
+          "tipo": "Escudo",
+          "descricao": "Normalmente feito de aço, este escudo é preso ao antebraço e também deve ser empunhado com firmeza, impedindo o usuário de usar aquela mão.",
+          "preco": 15,
+          "defesa bonus": 2,
+          "penalidade": -2,
+          "espacos": 2
+        }
+      ]
+    }
+  ]
+}
