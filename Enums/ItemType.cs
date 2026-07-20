@@ -2,9 +2,8 @@
 
 public enum ItemType {
     Arma,
+    Municao,
     Armadura,
     Escudo,
-    Usaveis,
-    Municao,
     Outros
 }

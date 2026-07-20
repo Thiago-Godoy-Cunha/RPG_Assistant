@@ -15,6 +15,16 @@
           "espacos": 2
         }
       ],
+      "municoes": [
+        {
+          "nome": "Flecha",
+          "tipo": "Municao",
+          "descricao": "Munição para arcos.",
+          "preco": 1,
+          "quantidade": 20,
+          "espacos": 1
+        }
+      ]
       "armaduras": [
         {
           "nome": "Armadura Acolchoada",

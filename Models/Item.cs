@@ -29,6 +29,9 @@ public class Item {
 
         return type switch {
             ItemType.Arma => Weapon.CreateFromRaw(name, raw, space, description, price),
+            ItemType.Armadura => Armor.CreateFromRaw(name, raw, space, description, price),
+            ItemType.Escudo => Shield.CreateFromRaw(name, raw, space, description, price),
+            ItemType.Municao => Ammo.CreateFromRaw(name, raw, space, description, price),
             _ => new Item(name, type, space, description, price)
         };
     }

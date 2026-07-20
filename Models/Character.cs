@@ -5,9 +5,11 @@ public class Character {
     private readonly string _name;
     private short _currentHealth;
     private short _currentMana;
-    //private byte _baseDef;
-    private byte _def;
+    private byte _baseDef;
     private byte _desloc;
+    private List<Item> _inventory;
+    private Armor ? _armor;
+    private Shield ? _shield;
     private Dictionary<AttributeType, sbyte> _attributes = new();
     private List<ExpertiseType> _trainedExpertises = new();
     private readonly Dictionary<Class, byte> _classLevels = new();
@@ -32,7 +34,7 @@ public class Character {
         _desloc = raca.Desloc;
         _currentHealth = MaxHealth;
         _currentMana = MaxMana;
-        //_baseDef = attributes.TryGetValue(AttributeType.Destreza, out sbyte des) ? (byte)(10 + des) : (byte)10;
+        _baseDef = attributes.TryGetValue(AttributeType.Destreza, out sbyte des) ? (byte)(10 + des) : (byte)10;
     }
 
     public override string ToString() {
@@ -68,7 +70,18 @@ public class Character {
         }
     }
 
-    public byte Def { get => _def; set => _def = value; }
+    private short MaxLoad {
+        get {
+            byte carga = 10;
+            if (_attributes.TryGetValue(AttributeType.Forca, out sbyte forca) && forca >= 0) {
+                carga += 2;
+            } else {
+                carga -= 1;
+            }
+            return (short)carga;
+        }
+    }
+    public byte Def => (byte)(_baseDef + (_armor?.DefenseBonus ?? 0) + (_shield?.DefenseBonus ?? 0)));
     public byte Desloc { get => _desloc; set => _desloc = value; }
     public short CurrentHealth { get => _currentHealth; set => _currentHealth = value; }
     public short CurrentMana { get => _currentMana; set => _currentMana = value; }
@@ -91,7 +104,7 @@ public class Character {
     public bool IsTrained(ExpertiseType type) => _trainedExpertises.Contains(type);
     public int GetExpertiseModifier(ExpertiseType expertise) {
         AttributeType associatedAttr = expertise.GetAssociatedAttribute();
-        sbyte attributeValue = _attributes[associatedAttr];
+        sbyte attributeValue = _attributes.TryGetValue(associatedAttr, out sbyte attrVal) ? attrVal : (sbyte)0;
         byte levelBonus = (byte) (TotalLevel / 2);
         byte trainingBonus = 0;
         if (_trainedExpertises.Contains(expertise)) {
