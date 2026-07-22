@@ -81,7 +81,7 @@ public class Character {
             return (short)carga;
         }
     }
-    public byte Def => (byte)(_baseDef + (_armor?.DefenseBonus ?? 0) + (_shield?.DefenseBonus ?? 0)));
+    public byte Def => (byte)(_baseDef + (_armor?.DefenseBonus ?? 0) + (_shield?.DefenseBonus ?? 0));
     public byte Desloc { get => _desloc; set => _desloc = value; }
     public short CurrentHealth { get => _currentHealth; set => _currentHealth = value; }
     public short CurrentMana { get => _currentMana; set => _currentMana = value; }
