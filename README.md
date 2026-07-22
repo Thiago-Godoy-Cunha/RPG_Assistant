@@ -92,7 +92,7 @@ em cada pasta:
 
 ## Decisões de arquitetura (e por quê)
 
-Este projeto vive num meio-termo deliberado — **sem over-engineering, sem desorganização**:
+Este projeto vive num meio-termo deliberado, **sem over-engineering, sem desorganização**:
 
 - **Sem DI formal / `IRepository<T>` / camada de serviço separada** — peso desnecessário para um projeto
   CLI solo. Reavaliado se o cenário mudar.
