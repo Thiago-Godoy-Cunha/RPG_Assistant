@@ -23,6 +23,23 @@ public static class CharacterCreationFlow {
         ExpertiseTrainingFlow.TrainOptionalExpertises(character);
 
         ShowSummary(character);
+
+        character.AddItem(Item.Create("Escudo Pesado"));
+        character.AddItem(Item.Create("Escudo Leve"));
+        if (character.EquipItem(0)) {
+            Console.WriteLine($"Equipou item {character.Inventory[0].Name}");
+        }
+        else {
+            Console.WriteLine("Não equipou item");
+        }
+        if (character.EquipItem(1)) {
+            Console.WriteLine($"Equipou item {character.Inventory[1].Name}");
+        }
+        else {
+            Console.WriteLine("Não equipou item");
+        }
+
+        //ShowInventory(character);
     }
 
     private static void ShowSummary(Character character) {
@@ -36,5 +53,13 @@ public static class CharacterCreationFlow {
         Console.WriteLine("\nPerícias treinadas:");
         foreach (var exp in character.TrainedExpertises)
             Console.WriteLine($"{exp}");
+    }
+
+    private static void ShowInventory(Character character) {
+        Console.Clear();
+        Console.WriteLine("Itens:");
+        foreach(Item item in character.Inventory) {
+            Console.WriteLine(item.Name);
+        }
     }
 }

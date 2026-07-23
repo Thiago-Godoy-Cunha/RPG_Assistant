@@ -7,9 +7,9 @@ public class Character {
     private short _currentMana;
     private byte _baseDef;
     private byte _desloc;
-    private List<Item> _inventory;
-    private Armor ? _armor;
-    private Shield ? _shield;
+    private readonly List<Item> _inventory = new();
+    private Armor? _armor;
+    private Shield? _shield;
     private Dictionary<AttributeType, sbyte> _attributes = new();
     private List<ExpertiseType> _trainedExpertises = new();
     private readonly Dictionary<Class, byte> _classLevels = new();
@@ -97,6 +97,7 @@ public class Character {
 
     public Shield? Shield { get => _shield; }
     public Armor? Armor { get => _armor; }
+    public List<Item> Inventory { get => _inventory; }
 
     public void TrainExpertise(ExpertiseType type) {
         if (_trainedExpertises.Contains(type))
@@ -105,19 +106,28 @@ public class Character {
     }
     public void UntrainExpertise(ExpertiseType type) => _trainedExpertises.Remove(type);
     public bool IsTrained(ExpertiseType type) => _trainedExpertises.Contains(type);
-    public int GetExpertiseModifier(ExpertiseType expertise) {
-        AttributeType associatedAttr = expertise.GetAssociatedAttribute();
-        sbyte attributeValue = _attributes.TryGetValue(associatedAttr, out sbyte attrVal) ? attrVal : (sbyte)0;
-        byte levelBonus = (byte) (TotalLevel / 2);
-        byte trainingBonus = 0;
-        if (_trainedExpertises.Contains(expertise)) {
-            trainingBonus = TotalLevel switch {
-                <= 6 => 2,
-                <= 14 => 4,
-                _ => 6
-            };
+    
+    public bool AddItem(Item item) {
+        if (item.Space <= MaxLoad) { 
+            _inventory.Add(item);
+            return true;
+        } else {
+            return false;
         }
-        return attributeValue + levelBonus + trainingBonus;
+    }
+    public void RemoveItemByIndex(byte index) {
+        _inventory.RemoveAt(index);
+    }
+    public bool EquipItem(byte index) {
+        if(Inventory[index].Type == ItemType.Armadura && Armor == null) {
+            _armor = Armor.EquipArmor((Armor)Inventory[index]);
+            return true;
+        }
+        if(Inventory[index].Type == ItemType.Escudo && Shield == null) {
+            _shield = Shield.EquipShield((Shield)Inventory[index]);
+            return true;
+        }
+        return false;
     }
     public bool CanLearnPower(Power power) {
         if (TotalLevel < power.RequiredCharLevel) return false;

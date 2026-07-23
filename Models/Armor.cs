@@ -14,6 +14,9 @@ public class Armor : Item {
         _penalty = penalty;
     }
 
+    public static Armor EquipArmor(Armor armor) {
+        return new Armor(armor.Name, armor.Space, armor.Description, armor.Price, armor.DefenseBonus, armor.Penalty);
+    }
 
     public static Armor CreateFromRaw(string name, JsonElement raw, byte space, string description, short price) {
         byte defenseBonus = raw.GetProperty("defesa bonus").GetByte();
