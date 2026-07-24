@@ -12,22 +12,29 @@ public class Character {
     private Shield? _shield;
     private Dictionary<AttributeType, sbyte> _attributes = new();
     private List<ExpertiseType> _trainedExpertises = new();
-    private readonly Dictionary<Class, byte> _classLevels = new();
-    private readonly Class _initialClass;
+    private readonly List<Class> _class = new();
     private readonly Origin _origin;
     private readonly Race _race;
     private readonly List<Power> _chosenPowers = new();
     private readonly List<Spell> _learnedSpells = new(); 
     public string Name => _name;
-    public byte TotalLevel => (byte)_classLevels.Values.Sum(lvl => (int)lvl);
+    public byte TotalLevel {
+        get {
+            byte total = 0;
+            foreach (Class _classes in _class) {
+                total += _classes.Level;
+            }
+            return total;
+        }
+    }
+
 
     public Character(string name, ClassType firstClass, OriginType origin, RaceType race, Dictionary<AttributeType, sbyte> attributes) {
         Class classe = new Class(firstClass);
         Origin origem = new Origin(origin);
         Race raca = new Race(race);
         _name = name;
-        _classLevels.Add(classe, 1);
-        _initialClass = classe;
+        _class.Add(classe);
         _origin = origem;
         _race = raca;
         _attributes = attributes;
@@ -38,20 +45,20 @@ public class Character {
     }
 
     public override string ToString() {
-        return $"{_name} é um {_race.Name} {_initialClass.Name} de nível {TotalLevel}\nVida: {CurrentHealth}\nMana: {CurrentMana}\nVida máxima: {MaxHealth}\nMana máxima: {MaxMana}\nDeslocamento: {Desloc}";
+        return $"{_name} é um {_race.Name} {_class[0].Name} de nível {TotalLevel}\nVida: {CurrentHealth}\nMana: {CurrentMana}\nVida máxima: {MaxHealth}\nMana máxima: {MaxMana}\nDeslocamento: {Desloc}";
     }
 
     public short MaxHealth {
         get {
             int constitutionMod = _attributes[AttributeType.Constituicao];
             int totalLevel = TotalLevel;
-            int baseHp = _initialClass.InitialHp;
+            int baseHp = _class[0].InitialHp;
 
-            foreach (var (classes, level) in _classLevels) {
-                if (classes == _initialClass) {
-                    baseHp += classes.HpPerLevel * (level - 1);
+            foreach (Class classes in _class) {
+                if (classes == _class[0]) {
+                    baseHp += classes.HpPerLevel * (classes.Level - 1);
                 } else {
-                    baseHp += classes.HpPerLevel * level;
+                    baseHp += classes.HpPerLevel * classes.Level;
                 }
             }
 
@@ -63,8 +70,8 @@ public class Character {
     public short MaxMana {
         get {
             int totalMana = 0;
-            foreach (var (classes, level) in _classLevels) {
-                totalMana += classes.ManaPerLevel * level;
+            foreach (Class classes in _class) {
+                totalMana += classes.ManaPerLevel * classes.Level;
             }
             return (short)totalMana;
         }
@@ -86,10 +93,6 @@ public class Character {
     public short CurrentHealth { get => _currentHealth; set => _currentHealth = value; }
     public short CurrentMana { get => _currentMana; set => _currentMana = value; }
 
-    public Dictionary<Class, byte> ClassLevels => _classLevels;
-
-    public Class InitialClass => _initialClass;
-
     public List<ExpertiseType> TrainedExpertises => _trainedExpertises;
     public Dictionary<AttributeType, sbyte> Attributes  => _attributes;
 
@@ -98,6 +101,8 @@ public class Character {
     public Shield? Shield { get => _shield; }
     public Armor? Armor { get => _armor; }
     public List<Item> Inventory { get => _inventory; }
+
+    public List<Class> Class => _class;
 
     public void TrainExpertise(ExpertiseType type) {
         if (_trainedExpertises.Contains(type))
@@ -129,28 +134,37 @@ public class Character {
         }
         return false;
     }
-    public bool CanLearnPower(Power power) {
-        if (TotalLevel < power.RequiredCharLevel) return false;
 
-        foreach (var (requiredClass, requiredLevel) in power.RequiredClassLevel) {
-            if (_classLevels.TryGetValue(requiredClass, out byte currentClassLevel)) {
-                if (currentClassLevel < requiredLevel) return false;
-            }
-            else {
-                if (requiredLevel > 0) return false;
-            }
-        }
-        return true;
+    public void GainLevel(ClassType classType) {
+        Class? existing = _class.FirstOrDefault(c => c.Name == classType);
+
+        if (existing is not null)
+            existing.UpgradeClass();
+        else
+            _class.Add(new Class(classType));
     }
-    public void LearnPower(Power power) {
-        if (_chosenPowers.Contains(power))
-            return;
+    //public bool CanLearnPower(Power power) {
+    //    if (TotalLevel < power.RequiredCharLevel) return false;
 
-        if (!CanLearnPower(power))
-            throw new InvalidOperationException($"O personagem não cumpre os requisitos para aprender o poder: {power.Name}.");
+    //    foreach (var (requiredClass, requiredLevel) in power.RequiredClassLevel) {
+    //        if (_classLevels.TryGetValue(requiredClass, out byte currentClassLevel)) {
+    //            if (currentClassLevel < requiredLevel) return false;
+    //        }
+    //        else {
+    //            if (requiredLevel > 0) return false;
+    //        }
+    //    }
+    //    return true;
+    //}
+    //public void LearnPower(Power power) {
+    //    if (_chosenPowers.Contains(power))
+    //        return;
 
-        _chosenPowers.Add(power);
-    }
+    //    if (!CanLearnPower(power))
+    //        throw new InvalidOperationException($"O personagem não cumpre os requisitos para aprender o poder: {power.Name}.");
+
+    //    _chosenPowers.Add(power);
+    //}
 
     public void SetAttributes(Dictionary<AttributeType, sbyte> attributes) => _attributes = attributes;
 }

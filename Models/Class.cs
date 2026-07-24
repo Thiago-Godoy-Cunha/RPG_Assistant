@@ -5,6 +5,7 @@ using System.Text.Json;
 namespace RPG_Assistant.Models;
 public class Class {
     private ClassType _name;
+    private byte _level;
     private byte _initialHp;
     private byte _hpPerLevel;
     private byte _manaPerLevel;
@@ -13,14 +14,17 @@ public class Class {
     //private Dictionary<byte, SpellCircle>? SpellCircleProgression;
 
     public Class(ClassType name) {
-        var raw = ClassDataLoader.GetRaw(name);
+        var raw = ClassDataLoader.GetRaw(name);        
         _name = name;
+        _level = 1;
         _initialHp = raw.GetProperty("InitialHp").GetByte();
         _hpPerLevel = raw.GetProperty("HpPerLevel").GetByte();
         _manaPerLevel = raw.GetProperty("ManaPerLevel").GetByte();
 
     }
-
+    public byte UpgradeClass() {
+        return _level += 1;
+    }
     public ClassType Name {
         get => _name;
     }
@@ -32,5 +36,8 @@ public class Class {
     }
     public byte ManaPerLevel {
         get => _manaPerLevel;
+    }
+    public byte Level { 
+        get => _level; 
     }
 }

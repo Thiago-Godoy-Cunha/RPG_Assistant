@@ -4,7 +4,7 @@ public enum ClassType {
     Barbaro,
     Bardo,
     Bucaneiro,
-    Caçador,
+    Cacador,
     Cavaleiro,
     Clerigo,
     Druida,

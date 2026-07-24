@@ -7,7 +7,7 @@ namespace RPG_Assistant.Cli;
 
 public static class ExpertiseTrainingFlow {
     public static void TrainObrigatoryExpertises(Character character) {
-        List<string>[] expertisesList = ExpertiseDataLoader.GetClassExpertises(character.InitialClass.Name);
+        List<string>[] expertisesList = ExpertiseDataLoader.GetClassExpertises(character.Class[0].Name);
         List<string> obrigatoryRaw = expertisesList[0];
 
         Console.Clear();
@@ -25,9 +25,9 @@ public static class ExpertiseTrainingFlow {
     }
 
     public static void TrainOptionalExpertises(Character character) {
-        List<string>[] expertisesList = ExpertiseDataLoader.GetClassExpertises(character.InitialClass.Name);
+        List<string>[] expertisesList = ExpertiseDataLoader.GetClassExpertises(character.Class[0].Name);
         List<string> optionalRaw = expertisesList[1];
-        byte qtdOptExpertises = ExpertiseDataLoader.GetQtdOptExpertises(character.InitialClass.Name);
+        byte qtdOptExpertises = ExpertiseDataLoader.GetQtdOptExpertises(character.Class[0].Name);
 
         var allOptions = ExpertiseRules.GetOptionalExpertiseOptions(optionalRaw);
         var availableOptions = SelectionGuard.ExcludeAlreadyChosen(allOptions, character.TrainedExpertises);
