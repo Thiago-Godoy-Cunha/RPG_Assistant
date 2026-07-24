@@ -1,0 +1,1983 @@
+﻿{
+    "progressao": {
+        "Arcanista": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": 1,
+                "habilidades": [
+                    "Caminho do Arcanista"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": 2,
+                "habilidades": []
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": 3,
+                "habilidades": []
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": 4,
+                "habilidades": []
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": 5,
+                "habilidades": []
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Alta Arcana"
+                ]
+            }
+        ],
+        "Barbaro": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Fúria +2"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Instinto selvagem +1"
+                ]
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Redução de dano 2"
+                ]
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Fúria +3"
+                ]
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Redução de dano 4"
+                ]
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Instinto selvagem +2"
+                ]
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Fúria +4",
+                    "Redução de dano 6"
+                ]
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Redução de dano 8"
+                ]
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Instinto selvagem +3"
+                ]
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Fúria +5"
+                ]
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Redução de dano 10"
+                ]
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Fúria Titânica"
+                ]
+            }
+        ],
+        "Bardo": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": 1,
+                "habilidades": [
+                    "Inspiração +1"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Eclético"
+                ]
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Inspiração +2"
+                ]
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": 2,
+                "habilidades": []
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Inspiração +3"
+                ]
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": 3,
+                "habilidades": []
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Inspiração +4"
+                ]
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": 4,
+                "habilidades": []
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Inspiração +5"
+                ]
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Artista Completo"
+                ]
+            }
+        ],
+        "Bucaneiro": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Audácia",
+                    "Insolência"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Evasão"
+                ]
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Esquiva sagaz +1"
+                ]
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Panache"
+                ]
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Esquiva sagaz +2"
+                ]
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Evasão aprimorada"
+                ]
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Esquiva sagaz +3"
+                ]
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Esquiva sagaz +4"
+                ]
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Esquiva sagaz +5"
+                ]
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Sorte de Nimb"
+                ]
+            }
+        ],
+        "Cacador": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Marca da presa +1d4",
+                    "Rastreador"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Explorador"
+                ]
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Caminho do explorador",
+                    "Marca da presa +1d8"
+                ]
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Explorador"
+                ]
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Marca da presa +1d12"
+                ]
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Explorador"
+                ]
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Marca da presa +2d8"
+                ]
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Explorador"
+                ]
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Marca da presa +2d10"
+                ]
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Explorador"
+                ]
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Mestre Caçador"
+                ]
+            }
+        ],
+        "Cavaleiro": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Baluarte +2",
+                    "Código de honra"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Duelo +2"
+                ]
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Caminho do cavaleiro",
+                    "Baluarte +4"
+                ]
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Baluarte (aliados adjacentes)",
+                    "Duelo +3"
+                ]
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Baluarte +6"
+                ]
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Resoluto"
+                ]
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Duelo +4"
+                ]
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Baluarte +8"
+                ]
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Baluarte (aliados em alcance curto)"
+                ]
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Baluarte +10",
+                    "Duelo +5"
+                ]
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Bravura Final"
+                ]
+            }
+        ],
+        "Clerigo": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": 1,
+                "habilidades": [
+                    "Devoto Fiel"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": 2,
+                "habilidades": []
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": 3,
+                "habilidades": []
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": 4,
+                "habilidades": []
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": 5,
+                "habilidades": []
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Mão da Divindade"
+                ]
+            }
+        ],
+        "Druida": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": 1,
+                "habilidades": [
+                    "Devoto Fiel",
+                    "Empatia Selvagem"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Caminho dos Ermos"
+                ]
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": 2,
+                "habilidades": []
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": 3,
+                "habilidades": []
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": 4,
+                "habilidades": []
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Força da Natureza"
+                ]
+            }
+        ],
+        "Guerreiro": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque especial +4"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Durão"
+                ]
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque especial +8"
+                ]
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque extra"
+                ]
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque especial +12"
+                ]
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque especial +16"
+                ]
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque especial +20"
+                ]
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Campeão"
+                ]
+            }
+        ],
+        "Inventor": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Engenhosidade",
+                    "Protótipo"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Fabricar item superior (1 melhoria)"
+                ]
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Comerciante"
+                ]
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Fabricar item superior (2 melhorias)"
+                ]
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Encontrar fraqueza"
+                ]
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Fabricar item superior (3 melhorias)"
+                ]
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Fabricar item mágico (menor)"
+                ]
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Olho do dragão"
+                ]
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Fabricar item superior (4 melhorias)"
+                ]
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Fabricar item mágico (médio)"
+                ]
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Fabricar item mágico (maior)"
+                ]
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Obra-prima"
+                ]
+            }
+        ],
+        "Ladino": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque furtivo +1d6",
+                    "Especialista"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Evasão"
+                ]
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque furtivo +2d6"
+                ]
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Esquiva sobrenatural"
+                ]
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque furtivo +3d6"
+                ]
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque furtivo +4d6"
+                ]
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Olhos nas costas"
+                ]
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque furtivo +5d6"
+                ]
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Evasão aprimorada"
+                ]
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque furtivo +6d6"
+                ]
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque furtivo +7d6"
+                ]
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque furtivo +8d6"
+                ]
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque furtivo +9d6"
+                ]
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Ataque furtivo +10d6"
+                ]
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "A Pessoa Certa para o Trabalho"
+                ]
+            }
+        ],
+        "Lutador": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Briga (1d6)",
+                    "Golpe relâmpago"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Casca grossa (Con)"
+                ]
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Briga (1d8)",
+                    "Golpe cruel"
+                ]
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Casca grossa (Con+1)"
+                ]
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Briga (1d10)",
+                    "Golpe violento"
+                ]
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Casca grossa (Con+2)"
+                ]
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Briga (2d6)"
+                ]
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Casca grossa (Con+3)"
+                ]
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Briga (2d8)"
+                ]
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Casca grossa (Con+4)"
+                ]
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Dono da Rua (2d10)"
+                ]
+            }
+        ],
+        "Nobre": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Autoconfiança",
+                    "Espólio",
+                    "Orgulho"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Palavras afiadas (2d6)"
+                ]
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Riqueza"
+                ]
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Gritar ordens"
+                ]
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Presença aristocrática"
+                ]
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Palavras afiadas (4d6)"
+                ]
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Palavras afiadas (6d6)"
+                ]
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Palavras afiadas (8d6)"
+                ]
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Palavras afiadas (10d6)"
+                ]
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Realeza"
+                ]
+            }
+        ],
+        "Paladino": [
+            {
+                "nivel": 1,
+                "poderDeClasse": false,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Abençoado",
+                    "Código do Herói",
+                    "Golpe Divino (+1d8)"
+                ]
+            },
+            {
+                "nivel": 2,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Cura pelas Mãos (1d8+1 PV)"
+                ]
+            },
+            {
+                "nivel": 3,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Aura Sagrada"
+                ]
+            },
+            {
+                "nivel": 4,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 5,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Bênção da Justiça",
+                    "Golpe Divino (+2d8)"
+                ]
+            },
+            {
+                "nivel": 6,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Cura pelas Mãos (2d8+2 PV)"
+                ]
+            },
+            {
+                "nivel": 7,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 8,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 9,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Golpe Divino (+3d8)"
+                ]
+            },
+            {
+                "nivel": 10,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Cura pelas Mãos (3d8+3 PV)"
+                ]
+            },
+            {
+                "nivel": 11,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 12,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 13,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Golpe Divino (+4d8)"
+                ]
+            },
+            {
+                "nivel": 14,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Cura pelas Mãos (4d8+4 PV)"
+                ]
+            },
+            {
+                "nivel": 15,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 16,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 17,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Golpe Divino (+5d8)"
+                ]
+            },
+            {
+                "nivel": 18,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Cura pelas Mãos (5d8+5 PV)"
+                ]
+            },
+            {
+                "nivel": 19,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": []
+            },
+            {
+                "nivel": 20,
+                "poderDeClasse": true,
+                "novoCirculo": null,
+                "habilidades": [
+                    "Vingador Sagrado"
+                ]
+            }
+        ]
+    }
+}
